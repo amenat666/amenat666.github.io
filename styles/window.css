@@ -109,7 +109,15 @@ button:hover{background-color:#dddddd50;}
     border-radius:1rem;
 }
 .nav-window-collapsed{display:none;}
-.nav-titlebar-collapsed{width:auto;}
+
+#current-page{
+    background-color:#1a1a1a;
+    border-radius:1rem;
+}
+#current-page:hover{
+    text-decoration:underline;
+    background-color:rgba(71, 61, 139, 0.5);
+}
 
 /* General window */
 .window{
