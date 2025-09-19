@@ -21,12 +21,21 @@
         .nav-window-content a:hover{background-color:rgb(195, 170, 255);}
         #current-page{background-color:#cbcac1;}
         #current-page:hover{background-color:rgb(195, 170, 255);}
-        /* Regular windows */
+        /* General window */
         .window{border-color:rgb(179, 147, 255);}
         .window-titlebar{
             background-color:rgb(195, 170, 255);
             border-bottom-color: rgb(179, 147, 255);}
         .window-content{background-color:#ddd;}
+        /* Details and summary */
+        details{
+            background-color:rgb(179,147,255);
+            border-color:rgb(179,147,255);
+        }
+        details summary{
+            background-color:rgb(195,170,255);
+            border-bottom-color:rgb(179,147,255);
+        }
     }
 }
 @media screen and (max-width:800px){
