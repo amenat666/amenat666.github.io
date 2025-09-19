@@ -14,14 +14,21 @@ body{
         img{border-color:rgb(179,147,255);}
     }
 }
-@media screen and(max-width:800px){
+@media screen and (max-width:800px){
     body{
-        .flex-container{
-            flex-direction:column;
-            padding:0;
-        }
+        .flex-container{flex-direction:column;padding:0;}
     }
 }
+
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    padding:0.25rem;
+    width:100;
+    gap:2.5rem;
+    justify-content:center;
+}
+
 
 p{
     text-align:justify;
@@ -80,13 +87,4 @@ img{
     border-radius:2rem;
     border-color:rgb(54,45,112);
     box-shadow:0 0.25rem 0.25 rem 0 rgba(0,0,0,0.2);
-}
-
-.flex-container{
-    display:flex;
-    flex-direction:row;
-    padding:0.25rem;
-    width:100;
-    gap:2.5rem;
-    justify-content:center;
 }
