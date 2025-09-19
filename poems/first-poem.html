@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/paper.css">
+        <link rel="stylesheet" href="/styles/poemas.css">
+        <link rel="stylesheet" href="/styles/window.css">
+    </head>
+    <body>
+        <div class="flex-container-general">
+            <div class="nav-window-area">
+                <div class="nav-window">
+                    <div class="nav-window-titlebar">
+                        <div class="nav-window-icon"><button onclick="collapseNavWindow()"><strong>&sstarf;&sstarf;&sstarf;</strong></button></div>
+                    </div>
+                    <div class="nav-window-content" id="topnav">
+                        <a>Volver</a>
+                        <a>Anterior</a>
+                        <a>Siguiente</a>
+                        <button onclick="changeFont()">Cambiar estilo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="viewport-area">
+                <div class="viewport">
+                    <span id="poem" class="default">
+                        <h1>Poema</h1>
+                        <p>Verso 1<br>Verso 2<br>Verso 3</p>
+                        <p>Verso 4<br>etc</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script src="/script.js"></script>
+
+    </body>
+</html>
