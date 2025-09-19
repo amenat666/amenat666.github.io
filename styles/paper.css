@@ -1,0 +1,64 @@
+/* this stylesheet is used to create a paper effect when reading stories/poems */
+
+@media screen and (max-width:800px){
+    body{
+        .flex-container-general{
+            flex-direction:column;
+            padding:0;
+            gap:0;
+            width:auto;
+            height:auto;
+        }
+        .nav-window-area{
+            position:sticky;
+            top:0;
+            flex-basis:content;
+        }
+        .viewport-area{
+            flex-basis:100vh;
+            width:100%;
+        }
+        .viewport{
+            overflow:hidden;
+        }
+        .viewport p{margin:2.5rem;}
+    }
+}
+@media (prefers-color-scheme: light){
+    body{
+        .viewport{
+            background-color:#dadada;
+            background-image:url("/assets/paper-background2-light.jpg");
+        }
+    }
+}
+
+.flex-container-general{
+    display:flex;
+    flex-direction:row;
+    width:95vw;
+    height:97vh;
+    gap:0.125rem;
+    justify-content:left;
+}
+.nav-window-area{
+    flex-basis:20vw;
+    padding:0;
+}
+/* this is the area where the "paper" is contained */
+.viewport-area{
+    flex-basis:60vw;
+    padding:0;
+}
+/* This class acts as the "paper" */
+.viewport{
+    width:100%;
+    height:100%;
+    overflow:scroll;
+    background-color:black;
+    background-image:url("/assets/paper-background.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
