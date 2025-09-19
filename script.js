@@ -38,3 +38,27 @@ function changeFont(){
     }
 
 }
+
+function hideAllWindows(){
+    for(let i=1;i<6;i++){
+        document.getElementById("window" + i).className="window-collapsed";
+    }
+}
+
+function showAllWindows(){
+    let element;
+    for(let i=1;i<6;i++){
+        element=document.getElementById("window"+i);
+        if(element.className==="window-collapsed"){
+            element.className="window";
+        }
+    }
+}
+
+function showSpecificWindow(num){
+    hideAllWindows();
+    let element=document.getElementById("window"+num);
+    if(element!==null){
+        element.className="window";
+    }
+}

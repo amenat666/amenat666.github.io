@@ -5,6 +5,17 @@
         <link rel="stylesheet" href="/styles/window.css">
         <title>Escritos</title>
     </head>
+    <style>
+        .flex-container{flex-wrap:wrap;}
+        .flex-item-general{
+            flex-basis:20%;
+            text-align:center;
+        }
+        .flex-item-general h2{text-align:center;text-decoration:underline;font-size:1rem;padding:0 1.5rem 0 1.5rem;}
+        .flex-item-general p{padding:0 0.5rem 0 0.5rem;}
+        .flex-item-general a{background:none;}
+        .flex-item-general img{height:7.5rem;width:7.5rem;}
+    </style>
     <body>
 
         <div class="nav-window">
@@ -29,11 +40,43 @@
                 <div class="window-title">*.&star; Lista de historias &star;.*</div>
             </div>
             <div class="window-content">
-                <p>(Pendiente)</p>
+                <p>Puedes ver más detalles sobre cada historia haciendo click sobre la imagen.</p>
+                <div class="flex-container">
+                    <div class="flex-item-general">
+                        <p style="text-align:center;">
+                            <a href="#window1"><img onclick="showSpecificWindow(1)"></a>
+                        </p>
+                        <h2>Los Colores, Solsticio</h2>
+                    </div>
+                    <div class="flex-item-general">
+                        <p style="text-align:center;">
+                            <a href="#window2"><img onclick="showSpecificWindow(2)"></a>
+                        </p>
+                        <h2>El relato sin título</h2>
+                    </div>
+                    <div class="flex-item-general">
+                        <p style="text-align:center;">
+                            <a href="#window3"><img onclick="showSpecificWindow(3)"></a>
+                        </p>
+                        <h2>Adolescentes (intento de novela #1)</h2>
+                    </div>
+                    <div class="flex-item-general">
+                        <p style="text-align:center;">
+                            <a href="#window4"><img onclick="showSpecificWindow(4)"></a>
+                        </p>
+                        <h2>Segunda Intención (intento de novela #2)</h2>
+                    </div>
+                    <div class="flex-item-general">
+                        <p style="text-align:center;">
+                            <a href="#window5"><img onclick="showSpecificWindow(5)"></a>
+                        </p>
+                        <h2>Metamorfosis / Profecía / Hermana Pequeña</h2>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="window">
+        <div class="window-collapsed" id="window1">
             <div class="window-titlebar">
                 <div class="window-title">Los Colores/Solsticio</div>
             </div>
@@ -48,7 +91,7 @@
             </div>
         </div>
 
-        <div class="window">
+        <div class="window-collapsed" id="window2">
             <div class="window-titlebar">
                 <div class="window-title">El relato sin título</div>
             </div>
@@ -68,7 +111,7 @@
             </div>
         </div>
 
-        <div class="window">
+        <div class="window-collapsed" id="window3">
             <div class="window-titlebar">
                 <div class="window-title">Adolescentes (intento de novela #1)</div>
             </div>
@@ -82,7 +125,7 @@
             </div>
         </div>
 
-        <div class="window">
+        <div class="window-collapsed" id="window4">
             <div class="window-titlebar">
                 <div class="window-title">Segunda Intención (intento de novela #2)</div>
             </div>
@@ -104,7 +147,7 @@
             </div>
         </div>
 
-        <div class="window">
+        <div class="window-collapsed" id="window5">
             <div class="window-titlebar">
                 <div class="window-title">Metamorfosis / Profecía / Hermana Pequeña</div>
             </div>
@@ -119,7 +162,9 @@
                 <ul><li><a>Metamorfosis / Profecía / Hermana Pequeña</a></li></ul>
             </div>
         </div>
-
-        <script src="/script.js"></script>
+        
+        <script src="/script.js">
+            
+        </script>
     </body>
 </html>

@@ -143,3 +143,5 @@ button:hover{background-color:#dddddd50;}
     background-color:#252525;
     height:100%;
 }
+
+.window-collapsed{display:none;}
