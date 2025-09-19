@@ -145,3 +145,22 @@ button:hover{background-color:#dddddd50;}
 }
 
 .window-collapsed{display:none;}
+
+/* Details and summary */
+details{
+    background-color:rgb(54,45,112);
+    border-radius:0.25rem;
+    border:0.1rem solid;
+    border-color:rgb(54,45,112);
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+}
+details p{
+    padding:0 0.625rem 0 0.625rem;
+}
+details summary{
+    background-color:darkslateblue;
+    border-bottom:0.1rem solid;
+    border-bottom-color:rgb(54,45,112);
+    padding:0 0 0 0.625rem;
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+}
