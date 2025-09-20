@@ -17,7 +17,9 @@
         }
         .nav-window-icon button{color:black;}
         .nav-window-icon button:hover{background-color:rgba(128, 0, 128, 0.25);}
-        .nav-window-content{background-color:#ddd;}
+        .nav-window-content{
+            background-color:#dddddd80;
+        }
         .nav-window-content a:hover{background-color:rgb(195, 170, 255);}
         #current-page{background-color:#cbcac1;}
         #current-page:hover{background-color:rgb(195, 170, 255);}
@@ -101,7 +103,8 @@ button:hover{background-color:#dddddd50;}
 }
 .nav-window-content{
     padding:0.625rem;
-    background-color:rgba(37, 37, 37, 1);
+    background-color:rgba(37, 37, 37, 0.5);
+    backdrop-filter:blur(0.125rem);
     display:flex;
     gap:0.9rem;
     flex-wrap:wrap;
@@ -149,7 +152,7 @@ button:hover{background-color:#dddddd50;}
 }
 .window-content{
     padding:0.625rem 1.2rem 0.625rem 1rem;
-    background-color:#252525;
+    background-color:#25252580;
     height:100%;
 }
 
