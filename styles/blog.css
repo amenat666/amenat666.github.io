@@ -26,11 +26,9 @@
 }
 @media (prefers-color-scheme: light){
     body{
-        .viewport{
-            background-color:#dadada;
-            background-image:url("/assets/paper-background-light.jpg");
+        ::-webkit-scrollbar-thumb{
+            background-color:rgb(195, 170, 255);
         }
-        ::-webkit-scrollbar-thumb{background-color:#aaa;}
     }
 }
 
