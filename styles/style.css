@@ -40,7 +40,7 @@ body{
 p{
     text-align:justify;
     font-family:'Times New Roman', Times, serif;
-    font-size:1rem;
+    font-size:1.2rem;
     margin-bottom:0.63rem;
 }
 ul{
@@ -70,21 +70,21 @@ header{
 h1{
     text-align:left;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:1.25rem;
+    font-size:1.5rem;
     margin-top:1.5rem;
     margin-bottom:0.94rem;
 }
 h2{
     text-align:left;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:1.125rem;
+    font-size:1.25rem;
     margin-top:1rem;
     margin-bottom:0.88rem;
 }
 h3{
     text-align:left;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:1rem;
+    font-size:1.2rem;
     margin-top:1rem;
     margin-bottom:0.75rem;
 }

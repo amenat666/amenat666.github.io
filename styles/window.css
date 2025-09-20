@@ -19,6 +19,7 @@
         .nav-window-icon button:hover{background-color:rgba(128, 0, 128, 0.25);}
         .nav-window-content{
             background-color:#dddddd80;
+            backdrop-filter:blur(0.25rem);
         }
         .nav-window-content a:hover{background-color:rgb(195, 170, 255);}
         #current-page{background-color:#cbcac1;}
@@ -102,6 +103,7 @@ button:hover{background-color:#dddddd50;}
 }
 .nav-window-title{
     font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
     padding-left:0.25rem;
     padding-top:0.25rem;
 }
@@ -115,7 +117,7 @@ button:hover{background-color:#dddddd50;}
     justify-content:center;
 }
 .nav-window-content a{
-    font-size:1rem;
+    font-size:1.2rem;
     text-decoration:none;
     padding:0.25rem;
 }
@@ -151,6 +153,7 @@ button:hover{background-color:#dddddd50;}
 }
 .window-title{
     font-family:'Courier New', Courier, monospace;
+    font-size:1.2rem;
     text-align:center;
     padding:0.25rem;
 }
