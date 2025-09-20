@@ -28,14 +28,14 @@
         .window-titlebar{
             background-color:rgb(195, 170, 255);
             border-bottom-color: rgb(179, 147, 255);}
-        .window-content{background-color:#ddd;}
+        .window-content{background-color:#ddddddb0;}
         /* Details and summary */
         details{
-            background-color:rgb(179,147,255);
+            background-color:rgba(179,147,255,0.75);
             border-color:rgb(179,147,255);
         }
         details summary{
-            background-color:rgb(195,170,255);
+            background-color:rgba(195,170,255,0.75);
             border-bottom-color:rgb(179,147,255);
         }
     }
@@ -160,7 +160,7 @@ button:hover{background-color:#dddddd50;}
 
 /* Details and summary */
 details{
-    background-color:rgb(54,45,112);
+    background-color:rgba(54,45,112,0.75);
     border-radius:0.25rem;
     border:0.1rem solid;
     border-color:rgb(54,45,112);
@@ -170,7 +170,7 @@ details p{
     padding:0 0.625rem 0 0.625rem;
 }
 details summary{
-    background-color:darkslateblue;
+    background-color:rgba(71, 61, 139, 0.75);
     border-bottom:0.1rem solid;
     border-bottom-color:rgb(54,45,112);
     padding:0 0 0 0.625rem;
