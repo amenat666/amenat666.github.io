@@ -41,6 +41,7 @@ function changeFont(){
 
 function hideAllWindows(){
     for(let i=1;i<6;i++){
+        if(document.getElementById("window"+i)===null){break;}
         document.getElementById("window" + i).className="window-collapsed";
     }
 }
@@ -60,5 +61,6 @@ function showSpecificWindow(num){
     let element=document.getElementById("window"+num);
     if(element!==null){
         element.className="window";
+        console.log("mostrando ventana "+num);
     }
 }
