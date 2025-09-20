@@ -4,11 +4,17 @@ body{
     background-color:black;
     color:#dedede;
     margin:1.88rem 1.88rem 1.88rem 1.88rem;
+    background-image:url("/assets/example-site-background.png");
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 @media (prefers-color-scheme:light){
     body{
         background-color:#dadada;
         color:#101010;
+        background-image:url("/assets/example-site-backgorund-light.jpg");
+        background-attachment:fixed;
         a{color:purple;}
         a:hover{background-color:rgba(221,126,221,0.5);}
         img{border-color:rgb(179,147,255);}
