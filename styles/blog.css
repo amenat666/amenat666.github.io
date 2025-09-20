@@ -1,0 +1,73 @@
+/* this stylesheet is used for viewing blog posts. It's similar to the paper.css sheet */
+
+@media screen and (max-width:800px){
+    body{
+        .flex-container-general{
+            flex-direction:column;
+            padding:0;
+            gap:0;
+            width:auto;
+            height:auto;
+        }
+        .nav-window-area{
+            position:sticky;
+            top:0;
+            flex-basis:content;
+        }
+        .viewport-area{
+            flex-basis:content;
+            width:100%;
+        }
+        .viewport{
+            height:100%;
+            overflow:hidden;
+        }
+    }
+}
+@media (prefers-color-scheme: light){
+    body{
+        .viewport{
+            background-color:#dadada;
+            background-image:url("/assets/paper-background-light.jpg");
+        }
+        ::-webkit-scrollbar-thumb{background-color:#aaa;}
+    }
+}
+
+body{margin:1rem;}
+
+.flex-container-general{
+    display:flex;
+    flex-direction:row;
+    width:97vw;
+    height:90vh;
+    gap:0.125rem;
+    justify-content:left;
+}
+.nav-window-area{
+    flex-basis:20vw;
+    padding:0;
+}
+
+.viewport-area{
+    flex-basis:60vw;
+    padding:0;
+}
+.viewport-area .window{height:100%;}
+.viewport{
+    height:87.5%;
+    width:100%;
+    overflow:auto;
+    padding:0.625rem;
+}
+.viewport p{
+    margin-top:0.125rem;
+    margin-right:1rem;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgba(71, 61, 139, 0.9);
+}
