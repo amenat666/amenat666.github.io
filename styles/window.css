@@ -26,9 +26,13 @@
         /* General window */
         .window{border-color:rgb(179, 147, 255);}
         .window-titlebar{
-            background-color:rgb(195, 170, 255);
+            background-color:rgba(195, 170, 255,0.9);
             border-bottom-color: rgb(179, 147, 255);}
-        .window-content{background-color:#ddddddb0;}
+        .window-content{background-color:#ddddddd8;}
+        .window-bottom-bar{
+            background-color:rgba(195,170,255,0.9);
+            border-top-color:rgb(179, 147, 255);
+        }
         /* Details and summary */
         details{
             background-color:rgba(179,147,255,0.75);
