@@ -5,7 +5,7 @@
         .flex-container-general{
             flex-direction:column;
             padding:0;
-            gap:0;
+            gap:1rem;
             width:auto;
             height:auto;
         }
