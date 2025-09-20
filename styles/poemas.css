@@ -21,6 +21,15 @@ body{
     }
 }
 
+@media screen and (max-width:800px){
+    body{
+        span p{
+            margin-left:2.5rem;
+            margin-right:1rem;
+        }
+    }
+}
+
 p{
     font-family:'Times New Roman', Times, serif;
     font-size:1.2rem;
