@@ -21,7 +21,7 @@
         .viewport{
             overflow:hidden;
         }
-        .viewport p{margin:2.5rem;}
+        
     }
 }
 @media (prefers-color-scheme: light){
