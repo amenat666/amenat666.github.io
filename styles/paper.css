@@ -30,6 +30,7 @@
             background-color:#dadada;
             background-image:url("/assets/paper-background-light.jpg");
         }
+        ::-webkit-scrollbar-thumb{background-color:#aaa;}
     }
 }
 
@@ -63,3 +64,13 @@
     background-size:cover;
 }
 .viewport h1{padding-top:2.5rem;}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background:#ddd;
+}
+::-webkit-scrollbar-track{
+    background:none;
+}
