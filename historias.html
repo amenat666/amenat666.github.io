@@ -6,16 +6,24 @@
         <title>Historias escritas por Amélie</title>
     </head>
     <style>
-        @media screen and (max-width:600px){
+        @media screen and (max-width:800px){
             body{
-                .flex-container{gap:1rem;}
-                .flex-item-general{width:100%;}
+                .flex-container{
+                    align-content:center;
+                    gap:1rem;
+                }
+                .flex-item-general{width:75%;}
             }
         }
-        .flex-container{flex-wrap:wrap;}
+        .flex-container{
+            flex-wrap:wrap;
+            gap:1.5rem;
+        }
         .flex-item-general{
-            flex-basis:20%;
+            flex-basis:17.5%;
             text-align:center;
+            padding-right:0;
+            padding-left:0;
         }
         .flex-item-general h2{text-align:center;text-decoration:underline;font-size:1rem;padding:0 1.5rem 0 1.5rem;}
         .flex-item-general p{padding:0 0.5rem 0 0.5rem;}

@@ -6,13 +6,24 @@
         <title>Página principal de Amélie</title>
     </head>
     <style>
+        @media screen and (max-width:800px){
+            .flex-container{
+                align-content:center;
+                gap:1.5rem;
+            }
+            .flex-item-general{
+                width:75%;
+            }
+        }
         .flex-item-general{
-            flex-basis:20%;
+            flex-basis:25%;
             text-align:center;
         }
         .flex-item-general h2{text-align:center;text-decoration:underline;}
         .flex-item-general p{padding:0 0.5rem 0 0.5rem;}
         .flex-item-general a:hover{background:none;}
+        .flex-item-general img{height:7.5rem;width:7.5rem;}
+
     </style>
     <body>
         <div class="nav-window">
