@@ -23,11 +23,13 @@
             width:100%;
         }
         .viewport{
+            background-image:url("/assets/paper-background-mobile.jpg");
+            background-attachment:fixed;
+            background-size:cover;
             overflow:hidden;
             size:content;
-        }   
+        }
     }
-
 }
 @media (prefers-color-scheme: light){
     body{
@@ -38,6 +40,17 @@
     }
     :root{
         scrollbar-color:#bbb #ddd;
+    } 
+}
+@media screen and (max-width:800px) and (prefers-color-scheme:light){
+    body{
+        .viewport{
+            background-image:url("/assets/paper-background-light-mobile.jpg");
+            background-attachment:fixed;
+            background-size:cover;
+            overflow:hidden;
+            size:content;
+        }
     }
 }
 
