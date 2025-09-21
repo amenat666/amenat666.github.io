@@ -9,6 +9,13 @@ body{
     background-color:black;
     color:#dedede;
 }
+
+@media screen and (max-width:800px){
+    body{
+        p{margin:0 1.5rem 0 1.5rem;}
+    }
+}
+
 @media (prefers-color-scheme:light){
     body{
         background-color:#dadada;
