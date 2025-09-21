@@ -44,6 +44,7 @@ p{
     margin-bottom:0.63rem;
 }
 ul{
+    font-size:1.2rem;
     list-style-type:symbols(cyclic "⋆");
 }
 ul li{
