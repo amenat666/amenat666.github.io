@@ -19,7 +19,7 @@
             flex-basis:content;
         }
         .viewport-area{
-            flex-basis:100vh;
+            flex-basis:content;
             width:100%;
         }
         .viewport{
@@ -28,6 +28,7 @@
             background-size:cover;
             overflow:hidden;
             size:content;
+            padding-bottom:2.5rem;
         }
     }
 }
