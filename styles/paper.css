@@ -34,7 +34,6 @@
             background-color:#dadada;
             background-image:url("/assets/paper-background-light.jpg");
         }
-        ::-webkit-scrollbar-thumb{background-color:#aaa;}
     }
     :root{
         scrollbar-color:#bbb #ddd;

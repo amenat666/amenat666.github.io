@@ -28,10 +28,14 @@ body{
 
 @media screen and (max-width:800px){
     body{
+        span p.freestyle{
+            text-wrap-mode:wrap;
+        }
         span p{
-            margin-left:2.5rem;
+            margin-left:1.5rem;
             margin-right:1rem;
         }
+        span p.hand{font-size:1.125rem;}
     }
 }
 
