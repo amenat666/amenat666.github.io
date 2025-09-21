@@ -24,9 +24,9 @@
         }
         .viewport{
             overflow:hidden;
-        }
-        
+        }   
     }
+
 }
 @media (prefers-color-scheme: light){
     body{
@@ -35,6 +35,9 @@
             background-image:url("/assets/paper-background-light.jpg");
         }
         ::-webkit-scrollbar-thumb{background-color:#aaa;}
+    }
+    :root{
+        scrollbar-color:#bbb #ddd;
     }
 }
 
