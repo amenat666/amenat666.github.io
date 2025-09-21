@@ -24,6 +24,7 @@
         }
         .viewport{
             overflow:hidden;
+            size:content;
         }   
     }
 
