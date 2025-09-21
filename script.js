@@ -7,6 +7,9 @@ function collapseNavWindow(){
         element.className="nav-window-content";
     }
 }
+function expandNavWindow(){
+    document.getElementById("topnav").className="nav-window-content";
+}
 
 /* switches between default font (Times New Roman) and JP Hand */
 function changeFont(){
@@ -40,6 +43,7 @@ function showAllWindows(){
 
 function showSpecificWindow(num){
     hideAllWindows();
+    if(document.getElementById("topnav").className==="nav-window-content"){collapseNavWindow();}
     let element=document.getElementById("window"+num);
     if(element!==null){
         element.className="window";

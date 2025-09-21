@@ -51,6 +51,9 @@
             text-align:left;
             padding-left:0.25rem;
         }
+        .nav-window-titlebar{
+            flex-direction:row row-reverse;
+        }
     }
 }
 
