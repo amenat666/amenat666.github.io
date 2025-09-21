@@ -82,10 +82,14 @@ span.hand p{
     font-size:2rem;
     font-family:'JP Hand';
     line-height:1.15;
+    animation:fade-in;
+    animation-duration:0.5s;
 }
 span.hand h1{
     font-size:2rem;
     font-family:'JP Hand';
+    animation:fade-in;
+    animation-duration:0.5s;
 }
 
 audio{display:none;}
