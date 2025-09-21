@@ -7,7 +7,11 @@
         <title> Historias | Solsticio</title>
         <link rel="icon" href="/assets/stories-icon1.PNG">
     </head>
-    <body>
+    <body onload="paperSoundEffect()">
+        <audio id="paper-sound">
+            <source src="/assets/215743__supersnd__turning-page-2.wav">
+        </audio>
+
         <div class="flex-container-general">
             <div class="nav-window-area">
                 <div class="nav-window">
@@ -69,5 +73,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="/script.js"></script>
     </body>
 </html>
