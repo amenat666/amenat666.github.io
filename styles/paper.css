@@ -26,7 +26,8 @@
             background-image:url("/assets/paper-background-mobile.jpg");
             background-attachment:fixed;
             background-size:cover;
-            height:80vh;
+            overflow:hidden;
+            size:content;
             padding-bottom:2.5rem;
         }
     }
