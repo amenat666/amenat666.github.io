@@ -10,25 +10,6 @@ function collapseNavWindow(){
 
 /* switches between default font (Times New Roman) and JP Hand */
 function changeFont(){
-    /*const styles=["default", "hand", "journal"];
-    let poemText=document.getElementById("poem");
-    let currentStyle=0;
-    let nextStyle=0;
-    for(let i=0;i<styles.length;i++){
-        if(poemText.className===styles[i]){
-            currentStyle=i;
-        }
-    }
-    if(currentStyle===(styles.length-1)){
-        nextStyle=0;
-    }
-    else nextStyle=currentStyle+1;
-    
-    console.log("current: " + styles[currentStyle]);
-    console.log("next: " + styles[nextStyle]);
-
-    poemText.className=(styles[currentStyle]);
-    */
    let poemText=document.getElementById("poem");
     if(poemText.className==="default"){
         poemText.className="hand";
@@ -36,6 +17,7 @@ function changeFont(){
     else{
         poemText.className="default";
     }
+    paperSoundEffect2();
 
 }
 
@@ -63,4 +45,16 @@ function showSpecificWindow(num){
         element.className="window";
         console.log("mostrando ventana "+num);
     }
+}
+
+// play sound effect when opening a poem
+let paperSound=document.getElementById("paper-sound");
+function paperSoundEffect(){
+    paperSound.play();
+}
+
+// play sound effect when pushing button
+let paperSound2=document.getElementById("paper-sound2");
+function paperSoundEffect2(){
+    paperSound2.play();
 }
