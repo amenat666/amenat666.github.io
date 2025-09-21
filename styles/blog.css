@@ -1,5 +1,9 @@
 /* this stylesheet is used for viewing blog posts. It's similar to the paper.css sheet */
 
+:root{
+    scrollbar-color:rgba(71, 61, 139, 0.9) #101010;
+}
+
 @media screen and (max-width:800px){
     body{
         .flex-container-general{
@@ -61,11 +65,4 @@ body{margin:1rem;}
 .viewport p{
     margin-top:0.125rem;
     margin-right:1rem;
-}
-
-::-webkit-scrollbar{
-    width:10px;
-}
-::-webkit-scrollbar-thumb{
-    background-color:rgba(71, 61, 139, 0.9);
 }

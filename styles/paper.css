@@ -1,5 +1,9 @@
 /* this stylesheet is used to create a paper effect when reading stories/poems */
 
+:root{
+    scrollbar-color:#ddd #101010;
+}
+
 @media screen and (max-width:800px){
     body{
         .flex-container-general{
@@ -64,13 +68,3 @@
     background-size:cover;
 }
 .viewport h1{padding-top:2.5rem;}
-
-::-webkit-scrollbar{
-    width:10px;
-}
-::-webkit-scrollbar-thumb{
-    background:#ddd;
-}
-::-webkit-scrollbar-track{
-    background:none;
-}
