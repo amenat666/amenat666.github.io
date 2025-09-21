@@ -69,7 +69,7 @@ button:hover{background-color:#dddddd50;}
 .nav-window{
     border:0.1rem solid;
     border-color:rgb(54, 45, 112);
-    border-radius:0.25rem;
+    border-radius:0.75rem;
     box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
     overflow:hidden;
     position:sticky;
@@ -166,7 +166,7 @@ button:hover{background-color:#dddddd50;}
     background-color:rgba(71, 61, 139, 0.9);
     border-top:0.1rem solid;
     border-top-color:rgba(54,45,112,1);
-    height:1.5rem;
+    height:2.125rem;
 }
 
 .window-collapsed{display:none;}
