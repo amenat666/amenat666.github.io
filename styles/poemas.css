@@ -9,6 +9,11 @@
     src:url(/assets/JOURNAL.TTF);
 }
 
+@keyframes fade-in{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
 body{
     background-color:black;
     color:#dedede;
@@ -53,6 +58,11 @@ h1{
     text-align:center;
     margin-bottom:1.25rem;
     font-style:bold;
+}
+
+span{
+    animation:fade-in;
+    animation-duration:0.5s;
 }
 
 span.default p{
