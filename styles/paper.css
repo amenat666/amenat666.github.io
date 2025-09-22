@@ -23,9 +23,8 @@
             width:100%;
         }
         .viewport{
-            background-image:url("/assets/paper-background-mobile.jpg");
-            background-attachment:fixed;
-            background-size:cover;
+            background-image:none;
+            background:radial-gradient(#101010,#202020);
             overflow:hidden;
             size:content;
             padding-bottom:2.5rem;
@@ -46,11 +45,11 @@
 @media screen and (max-width:800px) and (prefers-color-scheme:light){
     body{
         .viewport{
-            background-image:url("/assets/paper-background-light-mobile.jpg");
-            background-attachment:fixed;
-            background-size:cover;
+            background-image:none;
+            background:radial-gradient(#dadada,#c8c8c8);
             overflow:hidden;
             size:content;
+            padding-bottom:2.5rem;
         }
     }
 }
