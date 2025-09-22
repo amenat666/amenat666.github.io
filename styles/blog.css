@@ -29,11 +29,6 @@
     }
 }
 @media (prefers-color-scheme: light){
-    body{
-        ::-webkit-scrollbar-thumb{
-            background-color:rgb(195, 170, 255);
-        }
-    }
     :root{
         scrollbar-color:rgb(195, 170, 255) #ddd;
     }
