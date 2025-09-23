@@ -30,6 +30,7 @@ p{
     font-size:1.2rem;
     text-indent:3.13rem;
     text-align:justify;
+    hyphens:auto;
     margin: 0 2.5rem 0 2.5rem;
     line-height:1.5;
     animation:fade-in;
