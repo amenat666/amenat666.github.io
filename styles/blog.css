@@ -1,11 +1,22 @@
-/* this stylesheet is used for viewing blog posts. It's similar to the paper.css sheet */
+/* this stylesheet is used for viewing blog posts. */
 
 :root{
     scrollbar-color:rgba(71, 61, 139, 0.9) #101010;
 }
 
+body{
+    background-color:black;
+    color:#dedede;
+    margin:1rem;
+    background-image:url("/assets/background-tile.PNG");
+    background-attachment:fixed;
+    background-size:5rem;
+    background-repeat:repeat;
+}
+
 @media screen and (max-width:800px){
     body{
+        margin:0.125rem 0.5rem 0.125rem 0.5rem;
         .flex-container-general{
             flex-direction:column;
             padding:0;
@@ -29,12 +40,63 @@
     }
 }
 @media (prefers-color-scheme: light){
+    body{
+        background-color:#dadada;
+        color:#101010;
+        background-image:url("/assets/background-tile-light.PNG");
+        a{color:purple;}
+        a:hover{background-color:rgba(221,126,221,0.5);}
+    }
     :root{
         scrollbar-color:rgb(195, 170, 255) #ddd;
     }
 }
 
-body{margin:1rem;}
+p{
+    text-align:justify;
+    hyphens:auto;
+    font-family:'Times New Roman', Times, serif;
+    font-size:1.2rem;
+    margin-bottom:0.625rem;
+}
+ul{
+    font-size:1.2rem;
+    list-style-type:symbols(cyclic "⋆");
+}
+ul li{
+    line-height:1.5;
+}
+a{
+    color:plum;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration:none;
+}
+a:hover{
+    background-color:rgba(71,61,139,0.5);
+    border-radius:0.25rem;
+}
+
+h1{
+    text-align:left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.5rem;
+    margin-top:1.5rem;
+    margin-bottom:0.94rem;
+}
+h2{
+    text-align:left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.25rem;
+    margin-top:1rem;
+    margin-bottom:0.88rem;
+}
+h3{
+    text-align:left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.2rem;
+    margin-top:1rem;
+    margin-bottom:0.75rem;
+}
 
 .flex-container-general{
     display:flex;
