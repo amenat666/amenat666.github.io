@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="/styles/window.css">
+        <link rel="stylesheet" href="/styles/blog.css">
+        <title>Blog | Mis mejores listas de canciones</title>
+        <link rel="icon" href="/assets/blog-icon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+        .viewport-area{
+            overflow:auto;
+            scroll-behavior:smooth;
+        }
+        .viewport-area .window{
+            height:auto;
+        }
+        ol li{line-height:1.5;}
+        .aux-window-content p{text-align:left;font-size:1.125rem;}
+    </style>
+    <style>
+        @media screen and (max-width:800px){
+            body{
+                #aux-nav-window{display:none;}
+            }
+        }
+    </style>
+    <body>
+        <div class="flex-container-general">
+            <div class="nav-window-area">
+                <div class="nav-window">
+                    <div class="nav-window-titlebar">
+                        <div class="nav-window-icon"><button><strong onclick="collapseNavWindow()">&sstarf;&sstarf;&sstarf;</strong></button></div>
+                        <div class="nav-window-title">Opciones</div>
+                    </div>
+                    <div class="nav-window-content" id="topnav">
+                        <a href="/blog.html">Volver</a>
+                        <a href="mi-imperio-romano.html">Anterior</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="viewport-area">
+                <div class="window">
+                    <div class="window-titlebar">
+                        <div class="window-title">Mis listas de canciones (1/10/2025)</div>
+                    </div>
+                    <div class="window-content">
+                        <div class="viewport">
+                            <h1 id="inicio">Mis listas de reproducción</h1>
+                            <p>
+                                El 19 de julio de 2025 expiró mi suscripción a Spotify Premium para estudiantes y pensé que sería el momento ideal para copiarme de uno de mis más queridos amigos y abandonar Spotify definitivamente. A los pocos días, pensé también que podría ser entretenido (PARA MÍ, lo que tú pienses me da igual) hacer una pequeña crónica de mis listas favoritas, las que más se acercan, posiblemente, a decir <em>algo</em> sobre mí, porque, claro, a todos nos gusta identificarnos con la música que escuchamos, o con el significado personal e intransferible que le damos a dicha música.
+                            </p>
+                            <p>
+                                Esto no es, ni pretende ser, un resumen completo de mi gusto musical. Simplemente me apetecía comentar algunas de mis playlists favoritas.
+                            </p>
+                            <p>
+                                A la juventud le encantan las listas numeradas, dice mi madre. Supongo que tiene razón.
+                            </p>
+                            <h2 id="cheer-up-girl">Cheer Up, Girl</h2>
+                            <p>
+                                Canciones que me hacen reír o simplemente me ponen de buen humor. Mucho Frank Zappa.
+                            </p>
+                            <div class="aux-window">
+                                <div class="aux-window-titlebar" onclick="toggleAuxWindow(1)">
+                                    <div class="aux-window-title">Cheer up, girl!</div>
+                                </div>
+                                <div class="aux-window-content" id="window1">
+                                    <ol>
+                                        <li>Why Does It Hurt When I Pee? - Frank Zappa</li>
+                                        <li>No Hay Igual - Nelly Furtado, Calle 13</li>
+                                        <li>Cola - Lana del Rey</li>
+                                        <li>Yo’ Mama - Frank Zappa</li>
+                                        <li>Stfu - Pink Guy</li>
+                                        <li>Hit That Perfect Beat - Bronski Beat</li>
+                                        <li>He’s So Gay - Frank Zappa</li>
+                                        <li>Willie The Pimp - Frank Zappa</li>
+                                    </ol>
+                                    <p>(Confeccionada entre el 14 de abril de 2024 y el 4 de mayo de 2025)</p>
+                                </div>
+                            </div>
+                            
+                            <h2 id="pringada-total">Pringada total</h2>
+                            <p>
+                                Me hallaba en un pozo negro de autoestima cuando creé esta lista. Me sentía como una mierda, como una niña idiota, retrasada e inadaptada que estaría mejor muerta (pero también, cómo no, demasiado cobarde como para hacer realidad ese sueño). Quería ser guay, pero era el antónimo de guay. Con estas canciones podía sentirme entendida.
+                            </p>
+                            <div class="aux-window">
+                                <div class="aux-window-titlebar" onclick="toggleAuxWindow(2)">
+                                    <div class="aux-window-title">Pringada total<br>(I'm such a loser...)</div>
+                                </div>
+                                <div class="aux-window-content" id="window2">
+                                    <ol>
+                                        <li>People You Were Going To - Peter Hammill</li>
+                                        <li>Goin’ Home - Dinosaur Jr.</li>
+                                        <li>What’s My Age Again? - blink-182</li>
+                                        <li>Please, Please, Please, Let Me Get What I Want - The Smiths</li>
+                                        <li>Psycho Killer - Talking Heads</li>
+                                        <li>On The Beach - Neil Young</li>
+                                        <li>soy un idiota - PUTOCHINOMARICÓN</li>
+                                        <li>Se Me Da Mal Ser Mayor - PUTOCHINOMARICÓN</li>
+                                        <li>Teen Idle - MARINA</li>
+                                        <li>Washing Machine Heart - Mitski</li>
+                                        <li>Drunk Walk Home - Mitski</li>
+                                        <li>Canción de Mierda - Sexy Zebras</li>
+                                    </ol>
+                                    <p>(Confeccionada entre el 30 de mayo y el 23 de junio de 2024)</p>
+                                </div>
+                            </div>
+
+                            <h2 id="sunday-evening">Sunday Evening</h2>
+                            <p>
+                                Siempre he odiado los domingos muchísimo más que los lunes. Hay un tipo de melancolía muy específico que parece existir únicamente en los domingos, en sus tardes soporíferas, en sus noches en las que sabes que te tienes que acostar pronto porque hay trabajo o clase al día siguiente; la llevo sintiendo casi todas las semanas desde pequeña.
+                            </p>
+                            <p>
+                                Supongo que creé esta pequeña lista para tener algo tangible que asociar con ese sentimiento. Estas canciones también las asocio con la absoluta falta de color y textura que sentía en mi vida en aquel momento. Me las ponía con cascos en la cama mientras pensaba en todas las cosas que tendría que hacer al día siguiente, o en esos sueños infantiles que, a mis veintiún años, aún se movían dentro de mí, como polillas moribundas que tratan de alzar el vuelo, desplegando patéticamente sus alas rotas (cuánto tardaron en morir, aún me sorprende… vaya, ni siquiera tengo claro que hayan muerto del todo); mientras pensaba en mi propia mediocridad, mi gran mediocridad.
+                            </p>
+                            <p>
+                                Por cierto, como curiosidad, mi poema <a href="/poems/anagnorisis.html">“Anagnorisis”</a> es de la misma época que esta lista, y habla un poco de lo mismo: ese sentimiento de que todo es gris… ese sentimiento que parece alcanzar su pico, su valor máximo, los domingos por la tarde.
+                            </p>
+                            <p>
+                                En fin. La depre dominguera es brutal a veces.
+                            </p>
+                            <div class="aux-window">
+                                <div class="aux-window-titlebar" onclick="toggleAuxWindow(3)">
+                                    <div class="aux-window-title">Sunday Evening :(</div>
+                                </div>
+                                <div class="aux-window-content" id="window3">
+                                    <ol>
+                                        <li>Empire Ants (feat. Little Dragon) - Gorillaz, Little Dragon</li>
+                                        <li>All Is Soft Inside - AURORA</li>
+                                        <li>Paris, Texas (feat. SYML) - Lana Del Rey, SYML</li>
+                                        <li>Revolving Doors - Gorillaz</li>
+                                    </ol>
+                                    <p>(Creada y terminada el 25 de junio de 2023)</p>
+                                </div>
+                            </div>
+
+                            <h2 id="fantasia">Fantasía</h2>
+                            <p>
+                                Canciones que me hacen feliz y me llevan a mundos mágicos.
+                            </p>
+                            <p>
+                                Muchas de estas canciones las escuchaba de adolescente, mientras dibujaba o escribía o creaba mis mundos ficticios o jugaba videojuegos o simplemente me tumbaba en la cama y trataba de evadirme.
+                            </p>
+                            <p>
+                                Esta lista surgió como un intento de recopilar todas esas canciones maravillosas que, por cursi que esto pueda sonar, siento que han contribuido a forjar parte de mi personalidad y de mi creatividad, del mismo modo que lo hacen los vínculos o las experiencias vitales. Tal vez a ti te parezca una tontería darle tanta importancia a un montón de canciones compuestas por gente que no sabe de mi existencia y a la que no le importo en absoluto. Si es así, te digo que <em>claramente nunca has sido una chica adolescente obsesiva y solitaria como lo fui yo</em>.
+                            </p>
+                            <p>
+                                Durante los meses posteriores a su creación, esta lista me sirvió para inspirarme y para motivarme a escribir. Lo más destacable que ha terminado saliendo de esto son mis historias <a href="/historias/los-colores.html">"Los Colores, Desatados"</a> y <a href="/historias/solsticio.html">"Solsticio"</a>. De hecho, el título de la primera viene directamente de la letra de “Remember Tomorrow” de Iron Maiden, que empieza así: 
+                            </p>
+                            <p>
+                                <em>Unchain the colors before my eyes<br>Yesterday’s sorrows, tomorrow’s white lies</em>
+                            </p>
+                            <div class="aux-window">
+                                <div class="aux-window-titlebar" onclick="toggleAuxWindow(4)">
+                                    <div class="aux-window-title">Fantasía<br>(dreaming of magical worlds...)</div>
+                                </div>
+                                <div class="aux-window-content" id="window4">
+                                    <ol>
+                                        <li>Remember Tomorrow - Iron Maiden</li>
+                                        <li>The Musical Box (Live) - Genesis</li>
+                                        <li>The Temple Of The King - Rainbow</li>
+                                        <li>Catch The Rainbow - Rainbow</li>
+                                        <li>Mind Mischief - Tame Impala</li>
+                                        <li>Strange World - Iron Maiden</li>
+                                        <li>Solitude - Black Sabbath</li>
+                                        <li>Flight of Icarus - Iron Maiden</li>
+                                        <li>Feels Like We Only Go Backwards - Tame Impala</li>
+                                        <li>Dry Land - Marillion</li>
+                                        <li>Epitaph - King Crimson</li>
+                                        <li>Dead Weight - Jack Stauber</li>
+                                        <li>Be a Part - Dinosaur Jr.</li>
+                                        <li>Stick a Toe In - Dinosaur Jr.</li>
+                                        <li>Charlotte Sometimes - The Cure</li>
+                                        <li>Kayleigh - Marillion</li>
+                                        <li>Disturbing The Priest - Black Sabbath</li>
+                                        <li>Little Dreamer - Van Halen</li>
+                                        <li>(Don’t Fear) The Reaper - Blue Öyster Cult</li>
+                                        <li>White Room - Cream</li>
+                                        <li>Fear of the Dark - Iron Maiden</li>
+                                        <li>Annabel Lee - Radio Futura</li>
+                                        <li>Planet Caravan - Black Sabbath</li>
+                                        <li>Entre Caníbales - Soda Stereo</li>
+                                        <li>Sildavia - La Unión</li>
+                                        <li>Chelsea Embankment - Nikki Sudden, Max Edie</li>
+                                        <li>Firth of Fifth - Genesis</li>
+                                        <li>I Know What I Like (In Your Wardrobe) - Genesis</li>
+                                    </ol>
+                                    <p>(Confeccionada entre el 2 de diciembre de 2023 y el 20 de marzo de 2025)</p>
+                                </div>
+                            </div>
+
+                            <h2 id="guitarra">Canciones chulas para guitarra</h2>
+                            <p>
+                                Cuando creé esta lista había tenido un muy buen día y estaba de un humor maravilloso, cosa que no me suele pasar porque generalmente soy una total y absoluta amargada o simplemente me muero de sueño. Me apetecía mencionar ese detalle, aunque sea absolutamente irrelevante.
+                            </p>
+                            <p>
+                                Estas canciones pueden ser útiles si quieres sonar como <em><strong>DIOS</strong></em> en alguna tienda de guitarras en la que haya un cartel de “Prohibido Wonderwall” o “Prohibido Smoke On The Water” o algo así. Son MUY chulas.
+                            </p>
+                            <div class="aux-window">
+                                <div class="aux-window-titlebar" onclick="toggleAuxWindow(6)">
+                                    <div class="aux-window-title">Canciones chulas para guitarra</div>
+                                </div>
+                                <div class="aux-window-content" id="window6">
+                                    <ol>
+                                        <li>From the Beginning - Emerson, Lake & Palmer</li>
+                                        <li>Run - Joji</li>
+                                        <li>Two Halves - Richard Dawson</li>
+                                        <li>Soldier Of Fortune - Deep Purple</li>
+                                        <li>Hey You - Pink Floyd</li>
+                                        <li>Medusa’s Outhouse - Cass McCombs</li>
+                                        <li>All Nightmare Long - Metallica</li>
+                                        <li>Planet Caravan - Black Sabbath</li>
+                                        <li>The Comet, The Course, The Tail - Peter Hammill</li>
+                                        <li>Weaver - Richard Dawson</li>
+                                        <li>Opposite House - Cass McCombs</li>
+                                        <li>Goin’ Home - Dinosaur Jr.</li>
+                                        <li>Arpegios en Ocre - Carlos Viola</li>
+                                        <li>Sometimes I Feel Like Screaming - Deep Purple</li>
+                                        <li>Dry Land - Marillion</li>
+                                        <li>This Charming Man - The Smiths</li>
+                                        <li>Gerudo Valley (From “The Legend of Zelda: Ocarina of Time”) - Video Game Players</li>
+                                        <li>The Temple Of The King - Rainbow</li>
+                                        <li>The Inquisition - Colosseum II</li>
+                                        <li>Stay Loose - Belle and Sebastian</li>
+                                        <li>Paranoid Android - Radiohead</li>
+                                        <li>Modern - Peter Hammill</li>
+                                    </ol>
+                                    <p>(Confeccionada entre el 20 de mayo de 2023 y el 6 de diciembre de 2024)</p>
+                                </div>
+                            </div>
+
+                            <h2 id="uni-life">Uni life</h2>
+                            <p>
+                                La historia de mis desencantos con el sistema educativo es larga, dolorosa e incómoda, y no tengo intención de contarla aquí.
+                            </p>
+                            <p>
+                                Esta lista es lo más parecido que tengo a un resumen de dicha historia (¿o tal vez a la banda sonora…? Bueno, da igual, me has entendido).
+                            </p>
+                            <p>
+                                Si, como yo, sufriste en el instituto, en la universidad, o en cualquier otra etapa de tu educación, puede que te interese esta lista. :)
+                            </p>
+                            <div class="aux-window">
+                                <div class="aux-window-titlebar" onclick="toggleAuxWindow(7)">
+                                    <div class="aux-window-title">uni life<br>(college will finish me &hearts;)</div>
+                                </div>
+                                <div class="aux-window-content" id="window7">
+                                    <ol>
+                                        <li>Another Brick In The Wall, Pt. 2 - Pink Floyd</li>
+                                        <li>Working for the Knife - Mitski</li>
+                                        <li>Careering - Peter Hammill</li>
+                                        <li>School - Supertramp</li>
+                                        <li>Tick Tock - Joji</li>
+                                        <li>Unsatisfied - The Replacements</li>
+                                        <li>Might Quit - Bill Wurtz</li>
+                                        <li>Here I Go Again - Whitesnake</li>
+                                    </ol>
+                                    <p>(Confeccionada entre el 1 de agosto y el 11 de septiembre de 2023)</p>
+
+                                </div>
+                            </div>
+
+                            <h2 id="luz-color-magia">Luz y color y magia</h2>
+                            <p>
+                                Ésta es una de mis favoritas. Trátala con cariño, por favor.
+                            </p>
+                            <p>
+                                6 de septiembre de 2023: dos días atrás había vuelto de visitar a mi familia en Líbano (después de más de tres años sin ir), y al día siguiente volvería a clases. Escribí esto en mi diario:
+                            </p>
+                            <div class="aux-window">
+                                <div class="aux-window-titlebar" onclick="toggleAuxWindow(8)">
+                                    <div class="aux-window-title">06/09/2023</div>
+                                </div>
+                                <div class="aux-window-content" id="window8">
+                                    <p style="text-align:justify;">
+                                        Es un error pensar que, si estás bien, dejas de ser interesante o capaz de producir algo cautivador. Muchas irritaciones momentáneas amplificadas por la neurosis, el ocasional deseo de estar más delgada, el horror por la certeza del cambio climático; el tedio y las sombras de la vida. ¿Qué más da? Puedo sentirme bien a pesar de todo, supongo. Pensaba que hoy estaría triste y hundida al sentir que el tedio vuelve a mi vida, pero creo que no es para tanto…
+                                    </p>
+                                </div>
+                            </div>
+                            <p>
+                                Prácticamente todo lo que hay en ese cuaderno es deprimente. Esa primera entrada destaca como un oasis de esperanza, una pequeña perla entre todo el lodo y el limo que llenarían mi mundo en los meses que vendrían después.
+                            </p>
+                            <p>
+                                El final del verano casi siempre me encuentra con un sentimiento raro como de melancolía esperanzada. Es como si mi conciencia se pasara esos meses diciendo “en septiembre lo haremos todo bien”, “en septiembre saldremos del hoyo”... estoy escribiendo esto en julio, en plenas vacaciones, convencida de que en septiembre dejaré de hacer el vago, me pondré en serio con el TFG y, si puedo, empezaré a aprender CSS para crear este blog (inciso de la Amélie actual, a finales de septiembre del 25: al final creé el blog, mira tú por dónde, pero me falta empezar el TFG, y francamente ese tema me tiene muy desmotivada últimamente, en fin...).
+                            </p>
+                            <p>
+                                Me imagino que en aquel momento mi cuerpo seguía cargado con todos los recuerdos de mi reciente viaje a Líbano, todas las texturas, los colores, los aromas, los sentimientos, y eso me hacía estar más sensible y, por qué no… ¿nostálgica?
+                            </p>
+                            <p>
+                                (Pensándolo bien, aquello no era un deseo de volver al pasado, más bien era un contentamiento con el pasado y con el presente, una especie de satisfacción tipo “todo está exactamente donde tiene que estar”, mezclada con un poco de paz interior tipo “lo único que necesito ahora mismo es tocar la hierba y sentir la luz del sol y la brisa sobre mi piel, nada más, para estar completamente en paz con el mundo, la vida es maravillosa”... lo llamo “nostalgia” porque no sé cómo más llamarlo.)
+                            </p>
+                            <p>
+                                Qué manera de irse por las ramas. Hablemos de lo interesante: las canciones.
+                            </p>
+                            <p>
+                                Esta lista se compone de algunas de mis "imprescindibles" del rock de los setenta, las que más fuertemente unidas están a este sentimiento que acabo de describir, las que más lo potencian, las que me hicieron descubrirlo y me animaron a nombrarlo.
+                            </p>
+                            <p>
+                                Si quieres conocerme un poquito más, te recomiendo que la escuches. Si no, también te recomiendo que la escuches porque son temazos.
+                            </p>
+                            <div class="aux-window">
+                                <div class="aux-window-titlebar" onclick="toggleAuxWindow(10)">
+                                    <div class="aux-window-title">Luz y color y magia</div>
+                                </div>
+                                <div class="aux-window-content" id="window10">
+                                    <ol>
+                                        <li>Afterwards - Van Der Graaf Generator</li>
+                                        <li>All Skin And Bone - Colosseum II</li>
+                                        <li>Castles - Colosseum II</li>
+                                        <li>Comme un fou - Harmonium</li>
+                                        <li>From the Beginning - Emerson, Lake & Palmer</li>
+                                        <li>Sail Away - Deep Purple</li>
+                                        <li>Attends-moi - Harmonium</li>
+                                        <li>Summer Song (In The Autumn) - Peter Hammill</li>
+                                        <li>You Keep On Moving - Deep Purple</li>
+                                        <li>Rivers - Colosseum II</li>
+                                        <li>No Quarter - Led Zeppelin</li>
+                                        <li>The Surprising - Deep Purple</li>
+                                        <li>The Birds - Peter Hammill</li>
+                                        <li>Song For Donna - Gary Moore</li>
+                                        <li>Moonchild - King Crimson</li>
+                                    </ol>
+                                    <p>(Confeccionada entre el 6 y el 11 de septiembre de 2023)</p>
+                                </div>
+                            </div>
+
+                            <h2 id="top-solos">Top solos de guitarra</h2>
+                            <p>
+                                Supongo que estaba harta de ver siempre las mismas listas de “las 10 mejores canciones de toda la historia del rock”, “los 10 mejores solos de guitarra”, etc. que parecen invariablemente hechas por algún señor cincuentón que no ha escuchado nada nuevo desde poco después de que Tracii Guns fuera reemplazado por Slash (evento histórico) y sigue creyendo que Bohemian Rhapsody es el cenit de la composición musical y Free Bird de Lynyrd Skynyrd el cenit de los solos de guitarra. Supongo que quería hacer mi propia lista. Tal vez notes que en cierto punto empieza a irse por las ramas y a ser un mero conjunto de canciones en las que toca Ritchie Blackmore, pero bueno, creo que ha quedado una lista competente de todas formas. Si quieres un “top 3” típico, escucha las tres primeras y punto. En serio, Ritchie Blackmore era un excelente ingeniero de solos. Deberían darle un diploma o algo.
+                            </p>
+                            <p>
+                                (Por cierto, no tengo nada en contra de los señores cincuentones rockeritos, aclaro por si acaso. :p)
+                            </p>
+                            <p>
+                                (Y tampoco es que esta lista sea nada del otro mundo, en el sentido de que siguen siendo todo canciones y artistas conocidos, pero bueno, si mi gusto musical te parece muy básico siempre puedes hacer tu propia lista y mandármela c:)
+                            </p>
+                            <p>
+                                Las canciones están en orden lógico: el solo de guitarra de Firth Of Fifth es, francamente, una de las cosas más bonitas que he escuchado en mi vida. La primera vez que lo oí me quedé completamente helada, me pareció algo fuera de este mundo. Me lo sigue pareciendo, me lo parecerá siempre. Es PRECIOSO, de verdad, no sé qué más decir. Si tengo algo así como un solo de guitarra favorito, es ése, sin ninguna duda. La percusión que lo acompaña es hermosa también. El solo de guitarra de "Dogs" me trae una emoción indescriptible y lo amo.
+                            </p>
+                            <div class="aux-window">
+                                <div class="aux-window-titlebar" onclick="toggleAuxWindow(11)">
+                                    <div class="aux-window-title">mis solos de guitarra favoritos</div>
+                                </div>
+                                <div class="aux-window-content" id="window11">
+                                    <ol>
+                                        <li>Firth Of Fifth - Genesis</li>
+                                        <li>Dogs - Pink Floyd</li>
+                                        <li>Planet Caravan - Black Sabbath</li>
+                                        <li>Master Of Puppets - Metallica</li>
+                                        <li>A Gypsy’s Kiss - Deep Purple</li>
+                                        <li>Stargazer - Rainbow</li>
+                                        <li>The Trooper - Iron Maiden</li>
+                                        <li>Orion - Metallica</li>
+                                        <li>Comfortably Numb - Pink Floyd</li>
+                                        <li>Fireball - Deep Purple</li>
+                                        <li>Highway Star - Deep Purple</li>
+                                        <li>Burn - Deep Purple</li>
+                                        <li>Perfect Strangers - Deep Purple</li>
+                                    </ol>
+                                    <p>(Confeccionada entre el 23 de junio de 2022 y el 16 de febrero y de 2023)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="window-bottom-bar"></div>
+                </div>
+            </div>
+
+            <div class="aux-area">
+                <div class="window" id="aux-nav-window">
+                    <div class="window-titlebar">
+                        <div class="window-title">Índice</div>
+                    </div>
+                    <div class="window-content">
+                        <div class="viewport">
+                            <ul>
+                                <li><a href="#inicio">Inicio</a></li>
+                                <li><a href="#cheer-up-girl">Cheer Up, Girl</a></li>
+                                <li><a href="#pringada-total">Pringada total</a></li>
+                                <li><a href="#sunday-evening">Sunday Evening</a></li>
+                                <li><a href="#fantasia">Fantasía</a></li>
+                                <li><a href="#guitarra">Canciones chulas para guitarra</a></li>
+                                <li><a href="#uni-life">Uni life</a></li>
+                                <li><a href="#luz-color-magia">Luz y color y magia</a></li>
+                                <li><a href="#top-solos">Top solos de guitarra</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/script.js"></script>
+    </body>
+</html>

@@ -34,6 +34,12 @@
             background-color:rgba(195,170,255,0.9);
             border-top-color:rgb(179, 147, 255);
         }
+        /* Aux window */
+        .aux-window{border-color:rgb(179, 147, 255);}
+        .aux-window-titlebar{
+            background-color:rgba(195, 170, 255,0.9);
+            border-bottom-color: rgb(179, 147, 255);}
+        .aux-window-content{background-color:#dddddda0;}
         /* Details and summary */
         details{
             background-color:rgba(179,147,255,0.75);
@@ -169,10 +175,43 @@ button:hover{background-color:#dddddd50;}
     background-color:rgba(71, 61, 139, 0.9);
     border-top:0.1rem solid;
     border-top-color:rgba(54,45,112,1);
-    height:2.125rem;
+    height:1.85rem;
 }
 
 .window-collapsed{display:none;}
+
+/* aux window (used to display snippets or other things, can be minimized) */
+.aux-window{
+    border:0.1rem solid;
+    border-color:rgb(54,45,112);
+    border-radius:0.75rem;
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+    overflow:hidden;
+    margin:0 2.5rem 2.5rem 2.5rem;
+}
+.aux-window-titlebar{
+    background-color:rgba(71,61,139,0.9);
+    border-bottom:0.1rem solid;
+    border-bottom-color:rgba(54,45,112,1);
+}
+.aux-window-titlebar:hover{background-color:#aaa;}
+.aux-window-title{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1rem;
+    text-align:center;
+    padding:0.25rem;
+}
+.aux-window-content{
+    padding:0.625rem 1.2rem 0.625rem 1rem;
+    background-color:#252525b0;
+    height:100%;
+}
+.aux-window-bottom-bar{
+    background-color:rgba(71, 61, 139, 0.9);
+    border-top:0.1rem solid;
+    border-top-color:rgba(54,45,112,1);
+    height:1.625rem;
+}
 
 /* Details and summary */
 details{

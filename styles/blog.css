@@ -37,6 +37,9 @@ body{
             height:100%;
             overflow:hidden;
         }
+        .aux-area{
+            display:none;
+        }
     }
 }
 @media (prefers-color-scheme: light){
@@ -122,7 +125,19 @@ h3{
     overflow:auto;
     padding:0.625rem;
 }
+.window-content h1{scroll-margin-top:5rem;}
+.window-content h2{scroll-margin-top:5rem;}
 .viewport p{
     margin-top:0.125rem;
     margin-right:1rem;
+}
+
+.aux-area{
+    flex-basis:20vw;
+    padding:0;
+}
+.aux-area .window{height:100%;}
+.aux-area .window .window-content ul {
+    padding:0.625rem;
+    margin-top:0;
 }
