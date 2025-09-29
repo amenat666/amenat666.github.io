@@ -1,5 +1,10 @@
 /* this stylesheet is used for viewing blog posts. */
 
+@font-face{
+    font-family:'Journal';
+    src:url("/assets/JOURNAL.TTF");
+}
+
 :root{
     scrollbar-color:rgba(71, 61, 139, 0.9) #101010;
 }
@@ -49,6 +54,9 @@ body{
         background-image:url("/assets/background-tile-light.PNG");
         a{color:purple;}
         a:hover{background-color:rgba(221,126,221,0.5);}
+        .journal-snippet{
+            color:rgb(23, 19, 45);
+        }
     }
     :root{
         scrollbar-color:rgb(195, 170, 255) #ddd;
@@ -125,11 +133,21 @@ h3{
     overflow:auto;
     padding:0.625rem;
 }
-.window-content h1{scroll-margin-top:5rem;}
-.window-content h2{scroll-margin-top:2rem;}
+.window-content h1{
+    scroll-margin-top:5rem;
+}
+.window-content h2{
+    margin-top:1.5rem;
+    scroll-margin-top:1.75rem;
+}
 .viewport p{
     margin-top:0.125rem;
     margin-right:1rem;
+}
+
+ .journal-snippet{
+    font-family:'Journal';
+    color:rgb(212, 201, 248);
 }
 
 .aux-area{
