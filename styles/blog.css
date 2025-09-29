@@ -41,7 +41,10 @@ body{
         .viewport{
             height:100%;
             overflow:hidden;
+            padding-left:0;
+            padding-right:0;
         }
+        .viewport p{margin-right:0;}
         .aux-area{
             display:none;
         }

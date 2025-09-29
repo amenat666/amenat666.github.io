@@ -60,6 +60,10 @@
         .nav-window-titlebar{
             flex-direction:row row-reverse;
         }
+        .aux-window{
+            margin-right:0.5rem;
+            margin-left:0.5rem;
+        }
     }
 }
 
