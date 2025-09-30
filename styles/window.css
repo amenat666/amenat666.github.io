@@ -195,7 +195,7 @@ button:hover{background-color:#dddddd50;}
     border-radius:0.75rem;
     box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
     overflow:hidden;
-    margin:0 2.5rem 2.5rem 2.5rem;
+    margin:1.5rem 2.5rem 2.5rem 2.5rem;
 }
 .aux-window-titlebar{
     background:linear-gradient(darkslateblue,rgba(54,45,112,1)); /*rgba(71,61,139,0.9);*/
@@ -231,6 +231,7 @@ details{
     border:0.1rem solid;
     border-color:rgb(54,45,112);
     box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+    margin-bottom:0.625rem;
 }
 details p{
     padding:0 1.25rem 0 1.25rem;
@@ -241,4 +242,5 @@ details summary{
     border-bottom-color:rgb(54,45,112);
     padding:0 0 0 0.625rem;
     box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
+    font-size:1.2rem;
 }
