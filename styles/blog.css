@@ -38,6 +38,9 @@ body{
             flex-basis:content;
             width:100%;
         }
+        .viewport-area-scrollable{
+            flex-basis:content;
+        }
         .viewport{
             height:100%;
             overflow:hidden;
@@ -148,9 +151,14 @@ h3{
     margin-right:1rem;
 }
 
- .journal-snippet{
+.journal-snippet{
     font-family:'Journal';
     color:rgb(212, 201, 248);
+}
+.aux-window-content p.journal-snippet{
+    text-align:justify;
+    hyphens:auto;
+    font-size:1.75rem;
 }
 
 .aux-area{
@@ -161,4 +169,15 @@ h3{
 .aux-area .window .window-content ul {
     padding:0.625rem;
     margin-top:0;
+}
+
+/* The following class is similar to viewport-area but better for automatic scrolling */
+.viewport-area-scrollable{
+    flex-basis:60vw;
+    padding:0;
+    overflow:auto;
+    scroll-behavior:smooth;
+}
+.viewport-area-scrollable .window{
+    height:auto;
 }
