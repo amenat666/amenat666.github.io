@@ -68,6 +68,9 @@
             margin-right:0.5rem;
             margin-left:0.5rem;
         }
+        .aux-window-title{
+            font-size:1.2rem;
+        }
     }
 }
 
