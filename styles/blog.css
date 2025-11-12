@@ -29,7 +29,7 @@ body{
         .flex-container-general{
             flex-direction:column;
             padding:0;
-            gap:1rem;
+            gap:0rem;
             width:auto;
             height:auto;
         }

@@ -94,6 +94,7 @@ button:hover{background-color:#dddddd50;}
     overflow:hidden;
     position:sticky;
     top:0;
+    margin-bottom:1rem;
 }
 .nav-window-titlebar{
     background-color:darkslateblue;
