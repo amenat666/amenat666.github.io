@@ -54,6 +54,9 @@ body{
         .aux-area{
             display:none;
         }
+        p{font-size:1.125rem;}
+        a{font-size:1.125rem;}
+        ul{font-size:1.125rem;}
     }
 }
 @media (prefers-color-scheme: light){
