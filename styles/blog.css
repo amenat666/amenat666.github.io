@@ -117,6 +117,15 @@ h3{
     margin-top:1rem;
     margin-bottom:0.75rem;
 }
+header{
+    text-decoration-skip-ink: auto;
+    text-decoration:underline;
+    text-align:center;
+    font-family:'Journal', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.88rem;
+    margin:1.5rem 0 1.25rem 0;
+    font-weight:bold;
+}
 
 /* flexbox */
 .flex-container-general{
@@ -170,6 +179,9 @@ h3{
 .window-content h2{
     margin-top:1.5rem;
     scroll-margin-top:1.75rem;
+}
+header{
+    scroll-margin-top:7.5rem;
 }
 .viewport p{
     margin-top:0.125rem;
