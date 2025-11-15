@@ -1,0 +1,148 @@
+/* improved stylesheet for viewing blog posts */
+
+@font-face{
+    font-family:'Journal';
+    src:url("/assets/JOURNAL.TTF");
+}
+@font-face{
+    font-family:'JP Hand Straight';
+    src:url("/assets/jp_hand_straight/JPHST.TTF");
+}
+
+:root{
+    scrollbar-color:rgba(71, 61, 139, 0.9) #101010;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:black;
+    color:#dedede;
+    background-image:url("/assets/background-tile.PNG");
+    background-attachment:fixed;
+    background-size:5rem;
+    background-repeat:repeat;
+}
+
+@media screen and (max-width:800px){
+    body{
+        margin:0.125rem 0.5rem 0.125rem 0.5rem;
+        p{font-size:1.125rem;}
+        a{font-size:1.125rem;}
+        ul{font-size:1.125rem;}
+        .window{margin:0;}
+        .nav-window{
+            position:sticky;
+            width:auto;
+        }
+        #index{display:none;}
+    }
+}
+@media (prefers-color-scheme: light){
+    body{
+        background-color:#dadada;
+        color:#101010;
+        background-image:url("/assets/background-tile-light.PNG");
+        a{color:purple;}
+        a:hover{background-color:rgba(221,126,221,0.5);}
+        .journal-snippet{
+            color:rgb(23, 19, 45);
+        }
+    }
+    :root{
+        scrollbar-color:rgb(195, 170, 255) #ddd;
+    }
+}
+
+/* Text */
+p{
+    text-align:justify;
+    hyphens:auto;
+    font-family:'Times New Roman', Times, serif;
+    font-size:1.2rem;
+    margin-bottom:0.625rem;
+}
+ul{
+    font-size:1.2rem;
+    list-style-type:symbols(cyclic "⋆");
+}
+ul li{line-height:1.5rem;}
+a{
+    color:plum;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration:none;
+}
+a:hover{
+    background-color:rgba(71,61,139,0.5);
+    border-radius:0.25rem;
+}
+h1{
+    text-align:left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.5rem;
+    margin-top:1.5rem;
+    margin-bottom:0.94rem;
+    scroll-margin-top:5rem;
+}
+h2{
+    text-align:left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.25rem;
+    margin-top:1rem;
+    margin-bottom:0.88rem;
+    scroll-margin-top:5.5rem;
+}
+h3{
+    text-align:left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.2rem;
+    margin-top:1rem;
+    margin-bottom:0.75rem;
+}
+header{
+    text-decoration-skip-ink: auto;
+    text-decoration:underline;
+    text-align:center;
+    font-family:'Journal', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:2rem;
+    margin:1.5rem 0 1.25rem 0;
+    font-weight:bold;
+    scroll-margin-top:7.5rem;
+}
+.journal-snippet{
+    font-family:'Journal';
+    color:rgb(212, 201, 248);
+}
+.aux-window-content p.journal-snippet{
+    text-align:justify;
+    hyphens:auto;
+    font-size:1.75rem;
+}
+
+
+/* Windows */
+.window{
+    margin-right:10rem;
+    margin-left:10rem;
+}
+.nav-window{
+    width:fit-content;
+    position:fixed;
+}
+.nav-window-title{padding-right:0.5rem;}
+
+/* Index */
+#index{
+    margin:0;
+    width:10rem;
+    position:fixed;
+    right:0;
+    top:0;
+}
+#index .window-content{
+    height:85vh;
+    overflow:auto;
+}
+#index ul{
+    padding-left:0.625rem;
+    font-size:1.125rem;
+}
