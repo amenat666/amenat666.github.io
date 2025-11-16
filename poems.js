@@ -46,7 +46,7 @@ function displayPoemsList_ES(){
     for(i=0;i<poems_list_es.length;i++){
         let current = poems_list_es[i];
         const li = document.createElement("li");
-        li.innerHTML = "<a href=" + '"/poemas-es/' + current.fileName + '">' + current.title + " (" + current.fecha.toDateString() + ")" + "</a>";
+        li.innerHTML = "<a href=" + '"/poemas-es/' + current.fileName + '">' + current.title + "</a>";
         element.appendChild(li);
     }
 }
@@ -57,7 +57,7 @@ function displayPoemsList_EN(){
     for(i=0;i<poems_list_en.length;i++){
         let current = poems_list_en[i];
         const li = document.createElement("li");
-        li.innerHTML = "<a href=" + '"/poems/' + current.fileName + '">' + current.title + " (" + current.fecha.toDateString() + ")" + "</a>";
+        li.innerHTML = "<a href=" + '"/poems/' + current.fileName + '">' + current.title + "</a>";
         element.appendChild(li);
     }
 }
@@ -65,13 +65,14 @@ function displayPoemsList_EN(){
 // Muestra todos los poemas al cargar la página
 function displayAllPoems(){
     console.log("cargando índice de poemas");
+    console.log("Poemas en español")
     let savedSort = localStorage.getItem("orden_poemas_es");
     if(savedSort){
         orden_poemas_es = savedSort;
         console.log("preferencia del usuario: " + orden_poemas_es);
     }
     else{
-        //console.log("no hay preferencia del usuario");
+        console.log("no hay preferencia del usuario");
         orden_poemas_es = "alfa";
     }
     switch(orden_poemas_es){
@@ -80,13 +81,14 @@ function displayAllPoems(){
     }
     displayPoemsList_ES();
 
+    console.log("Poemas en inglés");
     let en_savedSort = localStorage.getItem("orden_poemas_en");
     if(en_savedSort){
         orden_poemas_en = en_savedSort;
         console.log("preferencia del usuario: " + orden_poemas_en);
     }
     else{
-        //console.log("no hay preferencia del usuario");
+        console.log("no hay preferencia del usuario");
         orden_poemas_en = "alfa";
     }
     switch(orden_poemas_en){
