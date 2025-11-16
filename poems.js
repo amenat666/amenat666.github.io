@@ -122,8 +122,80 @@ document.getElementById("sortPoemsEN").addEventListener("change",e=>{
 });
 
 // define el poema anterior y el siguiente en función del orden seleccionado por el usuario
+function setPoemNavigation(lang,poemTitle){
+    let orden_poemas;
+    let string_orden_poemas;
+    let poems_list;
+    let const_poems_list;
+    switch(lang){
+        case "EN":
+            orden_poemas = orden_poemas_en;
+            string_orden_poemas = "orden_poemas_en";
+            poems_list = poems_list_en;
+            const_poems_list = poems_en;
+            console.log("cargando poema en inglés " + '"' + poemTitle + '"');
+            break;
+        default:
+            orden_poemas = orden_poemas_es;
+            string_orden_poemas = "orden_poemas_es";
+            poems_list = poems_list_es;
+            const_poems_list = poems_es;
+            console.log("cargando poema en español " + '"' + poemTitle + '"');
+            break;
+    }
+
+    let index = 0;
+
+    let savedSort = localStorage.getItem(string_orden_poemas);
+    if(savedSort){
+        orden_poemas = savedSort;
+        console.log("preferencia del usuario: " + orden_poemas);
+    }
+    else{
+        console.log("no hay preferencia del usuario");
+        orden_poemas = "alfa";
+    }
+
+    switch(orden_poemas){
+        case "crono":poems_list=ordenCronologico(const_poems_list);break;
+        default:poems_list=ordenAlfabetico(const_poems_list);break;
+    }
+
+    for(i=0;i<poems_list.length;i++){
+        if(poems_list[i].title===poemTitle){
+            index = i;
+            break;
+        }
+    }
+    console.log("índice: " + (i));
+
+    // si es el primero
+    if(index===0){
+        let elem_prev = document.getElementById("link-prev");
+        elem_prev.style = "display:none";
+    }
+    else{
+        console.log("poema anterior: " + poems_list[i-1].title);
+        let elem_prev = document.getElementById("link-prev");
+        elem_prev.href="";
+        elem_prev.href=poems_list[i-1].fileName;
+    }
+    // si es el último
+    if(index===(poems_list.length-1)){
+        let elem_next = document.getElementById("link-next");
+        elem_next.style = "display:none";
+    }
+    else{
+        console.log("poema siguiente: " + poems_list[i+1].title);
+        let elem_next = document.getElementById("link-next");
+        elem_next.href = "";
+        elem_next.href = poems_list[i+1].fileName;
+    }
+
+}
 function setPoemNavigation_ES(poemTitle){
-    console.log("cargando poema " + '"' + poemTitle + '"');
+    setPoemNavigation("ES",poemTitle)
+    /*console.log("cargando poema " + '"' + poemTitle + '"');
     let index = 0;
 
     let savedSort = localStorage.getItem("orden_poemas_es");
@@ -170,8 +242,10 @@ function setPoemNavigation_ES(poemTitle){
         let elem_next = document.getElementById("link-next");
         elem_next.href="";
         elem_next.href=poems_list_es[i+1].fileName;
-    }
-
+    }*/
+}
+function setPoemNavigation_EN(poemTitle){
+    setPoemNavigation("EN",poemTitle);
 }
 
 function resetStorage(){
