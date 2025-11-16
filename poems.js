@@ -97,7 +97,7 @@ function displayAllPoems(){
 
 }
 
-// Actualiza el orden de los poemas
+// Selector para los poemas en español
 document.getElementById("sortPoemsES").addEventListener("change",e=>{
     if(e.target.value==="crono"){
         poems_list_es = ordenCronologico(poems_es);
@@ -109,7 +109,7 @@ document.getElementById("sortPoemsES").addEventListener("change",e=>{
     displayPoemsList_ES();
 });
 
-// Actualiza el orden de los poemas
+// Selector para los poemas en inglés
 document.getElementById("sortPoemsEN").addEventListener("change",e=>{
     if(e.target.value==="crono"){
         poems_list_en = ordenCronologico(poems_en);
