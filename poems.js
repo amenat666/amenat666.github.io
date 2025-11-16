@@ -1,9 +1,9 @@
 const poems_es = [
-    {title:"450nm", fileName:"450nm.html", fecha:new Date("2025-09-11")},
+    {title:"450nm", fileName:"450nm.html", fecha:new Date("2025-09-13")},
     {title:"Agotamiento", fileName:"agotamiento.html", fecha:new Date("2025-09-10")},
     {title:"Canción de Verano", fileName:"cancion-de-verano.html", fecha:new Date("2025-03-15")},
     {title:"Choque Frío", fileName:"choque-frio.html", fecha:new Date("2025-09-26")},
-    {title:"Después de la Fiesta", fileName:"despues-de-la-fiesta.html", fecha:new Date("2025-08-10")},
+    {title:"Después de la Fiesta", fileName:"despues-de-la-fiesta.html", fecha:new Date("2025-08-12")},
     {title:"El Gato Negro", fileName:"gato-negro.html", fecha:new Date("2022-04-14")},
     {title:"Luna Creciente", fileName:"luna-creciente.html", fecha:new Date("2025-08-13")},
     {title:"Mi Alma Es Un Desierto", fileName:"mi-alma-es-un-desierto.html", fecha:new Date("2025-07-26")},
@@ -14,20 +14,20 @@ let poems_list_es = poems_es;
 let orden_poemas_es;
 
 const poems_en = [
-    {title:"A Hole", fileName:"a-hole.html", fecha:new Date("2020-01-01")},
-    {title:"A Nightmare", fileName:"a-nightmare.html", fecha:new Date("2020-01-01")},
-    {title:"Anagnorisis", fileName:"anagnorisis.html", fecha:new Date("2020-01-01")},
-    {title:"Broken Glass", fileName:"broken-glass.html", fecha:new Date("2020-01-01")},
-    {title:"Chestnut Trees", fileName:"chestnut-trees.html", fecha:new Date("2020-01-01")},
-    {title:"Dawn/Blade", fileName:"dawn-blade.html", fecha:new Date("2020-01-01")},
-    {title:"?", fileName:"first-poem.html", fecha:new Date("2020-01-01")},
-    {title:"From The Pond", fileName:"from-the-pond.html", fecha:new Date("2020-01-01")},
-    {title:"He Is The Hawk", fileName:"he-is-the-hawk.html", fecha:new Date("2020-01-01")},
-    {title:"Laboratory Mice", fileName:"laboratory-mice.html", fecha:new Date("2020-01-01")},
-    {title:"Like A Dog", fileName:"like-a-dog.html", fecha:new Date("2020-01-01")},
-    {title:"Pigeons", fileName:"pigeons.html", fecha:new Date("2020-01-01")},
-    {title:"Pigeons II", fileName:"pigeons-ii.html", fecha:new Date("2020-01-01")},
-    {title:"The Tracks", fileName:"the-tracks.html", fecha:new Date("2020-01-01")}
+    {title:"A Hole", fileName:"a-hole.html", fecha:new Date("2024-11-29")},
+    {title:"A Nightmare", fileName:"a-nightmare.html", fecha:new Date("2025-03-07")},
+    {title:"Anagnorisis", fileName:"anagnorisis.html", fecha:new Date("2023-07-23")},
+    {title:"Broken Glass", fileName:"broken-glass.html", fecha:new Date("2024-12-17")},
+    {title:"Chestnut Trees", fileName:"chestnut-trees.html", fecha:new Date("2025-03-03")},
+    {title:"Dawn/Blade", fileName:"dawn-blade.html", fecha:new Date("2025-09-30")},
+    {title:"?", fileName:"first-poem.html", fecha:new Date("2021-08-06")},
+    {title:"From The Pond", fileName:"from-the-pond.html", fecha:new Date("2025-09-05")},
+    {title:"He Is The Hawk", fileName:"he-is-the-hawk.html", fecha:new Date("2025-10-08")},
+    {title:"Laboratory Mice", fileName:"laboratory-mice.html", fecha:new Date("2025-03-05")},
+    {title:"Like A Dog", fileName:"like-a-dog.html", fecha:new Date("2025-11-05")},
+    {title:"Pigeons", fileName:"pigeons.html", fecha:new Date("2024-12-18")},
+    {title:"Pigeons II", fileName:"pigeons-ii.html", fecha:new Date("2025-02-23")},
+    {title:"The Tracks", fileName:"the-tracks.html", fecha:new Date("2025-03-06")}
 ]
 let poems_list_en = poems_en;
 let orden_poemas_en;
@@ -46,7 +46,7 @@ function displayPoemsList_ES(){
     for(i=0;i<poems_list_es.length;i++){
         let current = poems_list_es[i];
         const li = document.createElement("li");
-        li.innerHTML = "<a href=" + '"/poemas-es/' + current.fileName + '">' + current.title + "</a>";
+        li.innerHTML = "<a href=" + '"/poemas-es/' + current.fileName + '">' + current.title + " (" + current.fecha.toDateString() + ")" + "</a>";
         element.appendChild(li);
     }
 }
@@ -57,7 +57,7 @@ function displayPoemsList_EN(){
     for(i=0;i<poems_list_en.length;i++){
         let current = poems_list_en[i];
         const li = document.createElement("li");
-        li.innerHTML = "<a href=" + '"/poems/' + current.fileName + '">' + current.title + "</a>";
+        li.innerHTML = "<a href=" + '"/poems/' + current.fileName + '">' + current.title + " (" + current.fecha.toDateString() + ")" + "</a>";
         element.appendChild(li);
     }
 }
