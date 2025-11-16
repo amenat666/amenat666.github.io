@@ -85,6 +85,15 @@ button{
 }
 button:hover{background-color:#dddddd50;}
 
+/* Selection */
+select{
+    background-color:darkslateblue;
+    color:#dedede;
+    margin:0.1rem;
+    border-radius:0.25rem;
+    border-width:0.1rem;
+}
+
 /* Navigation window */
 .nav-window{
     border:0.1rem solid;

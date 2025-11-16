@@ -8,7 +8,7 @@
         <link rel="icon" href="/assets/poem-icon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-    <body onload="paperSoundEffect()">
+    <body onload="paperSoundEffect(), setPoemNavigation_ES('Canción de Verano')">
         <audio id="paper-sound">
             <source src="/assets/215743__supersnd__turning-page-2.wav">
         </audio>
@@ -25,8 +25,8 @@
                     </div>
                     <div class="nav-window-content" id="topnav">
                         <a href="/poemas.html">Volver</a>
-                        <a href="agotamiento.html">Anterior</a>
-                        <a href="choque-frio.html">Siguiente</a>
+                        <a href="agotamiento.html" id="link-prev">Anterior</a>
+                        <a href="choque-frio.html" id="link-next">Siguiente</a>
                         <button onclick="changeFont()">Cambiar estilo</button>
                     </div>
                 </div>
@@ -62,6 +62,7 @@
         </div>
 
         <script src="/script.js"></script>
+        <script src="/poems.js"></script>
 
     </body>
 </html>
