@@ -197,54 +197,6 @@ function setPoemNavigation(lang,poemTitle){
 }
 function setPoemNavigation_ES(poemTitle){
     setPoemNavigation("ES",poemTitle)
-    /*console.log("cargando poema " + '"' + poemTitle + '"');
-    let index = 0;
-
-    let savedSort = localStorage.getItem("orden_poemas_es");
-    if(savedSort){
-        orden_poemas_es = savedSort;
-        console.log("preferencia del usuario: " + orden_poemas_es);
-    }
-    else{
-        console.log("no hay preferencia del usuario");
-        orden_poemas_es = "alfa";
-    }
-    switch(orden_poemas_es){
-        case "crono":poems_list_es = ordenCronologico(poems_es);break;
-        default:poems_list_es = ordenAlfabetico(poems_es);break;
-    }
-
-    for(i=0;i<poems_list_es.length;i++){
-        if(poems_list_es[i].title===poemTitle){
-            index = i;
-            break;
-        }
-    }
-    console.log("índice: " + (i));
-
-    // si es el primero
-    if(index===0){
-        let elem_prev = document.getElementById("link-prev");
-        elem_prev.style = "display:none;";
-    }
-    // si es el último
-    if(index===(poems_list_es.length-1)){
-        let elem_next = document.getElementById("link-next");
-        elem_next.style = "display:none;";
-    }
-
-    if(index!==0){
-        console.log("poema anterior: " + poems_list_es[i-1].title);
-        let elem_prev = document.getElementById("link-prev");
-        elem_prev.href="";
-        elem_prev.href=poems_list_es[i-1].fileName;
-    }
-    if(index!==(poems_list_es.length-1)){
-        console.log("poema siguiente: " + poems_list_es[i+1].title);
-        let elem_next = document.getElementById("link-next");
-        elem_next.href="";
-        elem_next.href=poems_list_es[i+1].fileName;
-    }*/
 }
 function setPoemNavigation_EN(poemTitle){
     setPoemNavigation("EN",poemTitle);
