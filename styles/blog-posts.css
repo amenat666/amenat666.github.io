@@ -32,6 +32,7 @@ body{
         }
         a{font-size:1rem;}
         ul{font-size:1rem;}
+        ul li{line-height:1.25;}
         .window{margin:0;}
         .nav-window{
             position:sticky;
@@ -69,7 +70,7 @@ ul{
     font-size:1.2rem;
     list-style-type:symbols(cyclic "⋆");
 }
-ul li{line-height:1.2rem;}
+ul li{line-height:1.25}
 a{
     color:plum;
     font-family:'Times New Roman', Times, serif;
