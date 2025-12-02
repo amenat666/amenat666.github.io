@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/paper.css">
+        <link rel="stylesheet" href="/styles/poemas.css">
+        <link rel="stylesheet" href="/styles/window.css">
+        <title>Poemas | Mirada Vacía</title>
+        <link rel="icon" href="/assets/poem-icon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body onload="paperSoundEffect(), setPoemNavigation_ES('Mirada Vacía')">
+        <audio id="paper-sound">
+            <source src="/assets/215743__supersnd__turning-page-2.wav">
+        </audio>
+        <audio id="paper-sound2">
+            <source src="/assets/428665__jomse__pickupbook2.wav">
+        </audio>
+        
+        <div class="flex-container-general">
+            <div class="nav-window-area">
+                <div class="nav-window">
+                    <div class="nav-window-titlebar">
+                        <div class="nav-window-icon"><button onclick="collapseNavWindow()"><strong>&sstarf;&sstarf;&sstarf;</strong></button></div>
+                        <div class="nav-window-title">Opciones</div>
+                    </div>
+                    <div class="nav-window-content" id="topnav">
+                        <a href="/poemas.html">Volver</a>
+                        <a href="gato-negro.html" id="link-prev">Anterior</a>
+                        <a href="mi-alma-es-un-desierto.html" id="link-next">Siguiente</a>
+                        <button onclick="changeFont()">Cambiar estilo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="viewport-area">
+                <div class="viewport">
+                    <span id="poem" class="default">
+                        <h1>Mirada Vacía</h1>
+                        <p>
+                            Un vacío tras la mirada,<br>Pupila fija en el alma;<br>Me pregunto si ellos pueden verlo<br>O sólo soy yo<br>Esta nada,<br>Esta total y absoluta nada.<br>Un vacío insondable,<br>Pupila fija tallada en piedra,<br>Un boquete por el que entra la nieve<br>Y resuena el profundo suspiro del mundo<br>Que soy incapaz de recordar<br>Cuándo se abrió<br>Por mucho que lo intente,<br>Por mucho que lo intente…<br>El bosque de columnas se cae a pedazos<br>Mientras aguardo<br>El avance de la rotación terrestre<br>Lenta y pesada<br>Que nunca se completa,<br>Aguardo<br>Junto al espejo roto,<br>El cangrejo ermitaño<br>Que contempla los destrozos<br>De su hogar,<br>El topo ciego<br>Que busca el centro de la tierra<br>Y no lo encuentra.<br>Un universo en dos dimensiones,<br>En blanco y negro,<br>Me pregunto si ellos pueden verlo<br>O sólo soy yo<br>Este boceto eterno.<br>Aguardo<br>Un calor<br>Lacerante,<br>Un cambio<br>Que nunca llega.<br>Un vacío tras la mirada,<br>Me pregunto si pueden verlo.
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script src="/script.js"></script>
+        <script src="/poems.js"></script>
+
+    </body>
+</html>
