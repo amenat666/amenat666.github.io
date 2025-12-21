@@ -9,7 +9,8 @@ const poems_es = [
     {title:"Mi Alma Es Un Desierto", fileName:"mi-alma-es-un-desierto.html", fecha:new Date("2025-07-26")},
     {title:"Otra Vez", fileName:"otra-vez.html", fecha:new Date("2025-02-12")},
     {title:"Te Guardo", fileName:"te-guardo.html", fecha:new Date("2025-08-26")},
-    {title:"Mirada Vacía",fileName:"mirada-vacia.html",fecha:new Date("2025-11-21")}
+    {title:"Mirada Vacía",fileName:"mirada-vacia.html",fecha:new Date("2025-11-21")},
+    {title:"Y de pronto...",fileName:"y-de-pronto.html",fecha:new Date("2025-12-12")}
 ];
 let poems_list_es = poems_es;
 let orden_poemas_es;
