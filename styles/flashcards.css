@@ -1,0 +1,48 @@
+@media screen and (max-width:800px){
+    body{
+        .multi-card-area{
+        flex-direction:column;
+        }
+    }
+}
+
+.multi-card-area{
+    display:flex;
+    flex-direction:row;
+    gap:2.25rem;
+    justify-content:center;
+    padding:1.5rem;
+}
+.card-wrapper{
+    width:12.5rem;
+}
+.card-body{
+    position:static;
+    padding:1.25rem .5rem 1.25rem .5rem;
+    transition:transform 0.5s;
+    transform-style:preserve-3d;
+    background-color:rgb(33, 23, 69);
+    border:0.125rem solid;
+    border-color:rgb(29, 20, 59);
+    border-radius:1.125rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2),0 5px 15px rgba(35,10,60,0.25);
+}
+.card-wrapper:hover .card-body{
+    transform: rotateX(180deg);
+}
+.card-front,.card-back{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.card-front p, .card-back p{
+    text-align:center;
+    margin:0;
+    top:0;
+    transform:translateY(50%);
+}
+.card-back{
+    transform:rotateX(180deg);
+}
+.card-front{
+    transform:rotate(0);
+}

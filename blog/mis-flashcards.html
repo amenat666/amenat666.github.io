@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="/styles/window.css">
+        <link rel="stylesheet" href="/styles/blog-posts.css">
+        <link rel="stylesheet" href="/styles/flashcards2.css">
+        <title>Blog | Mis flashcards de árabe y otras chorradas</title>
+        <link rel="icon" href="/assets/blog-icon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+        h2{
+            font-family:'JP Hand Straight';
+            font-size:1.75rem;
+        }
+    </style>
+    <body>
+        <audio id="paper-sound">
+            <source src="/assets/428665__jomse__pickupbook2.wav">
+        </audio>
+        <div class="nav-window">
+            <div class="nav-window-titlebar">
+                <div class="nav-window-icon"><button><strong onclick="collapseNavWindow()">&sstarf;&sstarf;&sstarf;</strong></button></div>
+                <div class="nav-window-title">Opciones</div>
+            </div>
+            <div class="nav-window-content" id="topnav">
+                <a href="/blog.html">Volver</a>
+                <a href="diarios.html">Anterior</a>
+            </div>
+        </div>
+
+        <header id="inicio">Mis flashcards de árabe y otras chorradas</header>
+
+        <div class="window">
+            <div class="window-titlebar">
+                <div class="window-title">Mis flashcards de árabe y otras chorradas (fecha)</div>
+            </div>
+            <div class="window-content">
+
+                <p>(Introducción)</p>
+
+                <h2>Mis flashcards</h2>
+
+                <p>
+                    Uno de los <em>fun facts</em> más extendidos del árabe es que perro es un insulto, pero, valga la redundancia, también es, literalmente, perro, así que aquí te dejo las palabras que necesitarás en caso de que quieras 1: referirte a uno, dos o más de dos canes, b: insultar a uno, dos o más de dos individuos. De nada.
+                </p>
+                <div class="card-area">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-dog">
+                                <div class="card-front"><p>🐕</p></div>
+                                <div class="card-back"><p>كَلب</p><p class="transcript">kalb</p></div>
+                            </div>
+                        </div>
+                        <p>
+                            <button onclick="flipCard('card-dog')"></button>
+                        </p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-2dog">
+                                <div class="card-front"><p>🐕🐕</p></div>
+                                <div class="card-back"><p>كَلبان</p><p class="transcript">kalbaan</p></div>
+                            </div>
+                        </div>
+                        <p>
+                            <button onclick="flipCard('card-2dog')"></button>
+                        </p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-dogs">
+                                <div class="card-front"><p>🐕🐕🐕</p></div>
+                                <div class="card-back"><p>كَلاب</p><p class="transcript">kalaab</p></div>
+                            </div>
+                        </div>
+                        <p>
+                            <button onclick="flipCard('card-dogs')"></button>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-area">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-ball">
+                                <div class="card-front"><p>⚽</p></div>
+                                <div class="card-back"><p>كُرة</p><p class="transcript">kura</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-ball')"></button></p>
+                    </div>
+                </div>
+
+                <p>Gatos</p>
+                <div class="card-area">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-cat">
+                                <div class="card-front"><p>🐈</p></div>
+                                <div class="card-back"><p>قطة</p><p class="transcript">qaTTa<br>🇱🇧: bise</p></div>
+                            </div>
+                        </div>
+                        <p>
+                            <button onclick="flipCard('card-cat')"></button>
+                        </p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-2cat">
+                                <div class="card-front"><p>🐈🐈</p></div>
+                                <div class="card-back"><p>قطتان</p><p class="transcript">qaTataan</p></div>
+                            </div>
+                        </div>
+                        <p>
+                            <button onclick="flipCard('card-2cat')"></button>
+                        </p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-cats">
+                                <div class="card-front"><p>🐈🐈🐈</p></div>
+                                <div class="card-back"><p>قطط</p><p class="transcript">qaTaT</p></div>
+                            </div>
+                        </div>
+                        <p>
+                            <button onclick="flipCard('card-cats')"></button>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Recuerdo dónde estaba cuando aprendí a decir pollo en árabe: en mi cuarto, viendo <a href="https://www.youtube.com/watch?v=xBG1eVwH_wg">este vídeo</a>. Quedémonos con la versión estándar, <em>dajaaj</em>. Si añades una pequeña <em>a</em> al final de esa palabra, estarás hablando ya no tanto del pollo o las aves de corral como concepto, sino de una (1) gallina. Ésa es la palabra que he decidido ilustrar a continuación, junto con sus formas dual y plural.
+                </p>
+                <p>
+                    Dibujar gallinitas es muy divertido. Quién lo diría.
+                </p>
+                <div class="card-area">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-chicken">
+                                <div class="card-front"><p>🐔</p></div>
+                                <div class="card-back"><p>دجاجة</p><p class="transcript">dajaaja<br>🇱🇧: djeja</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-chicken')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-2chicken">
+                                <div class="card-front"><p>🐔🐔</p></div>
+                                <div class="card-back"><p>دجاجتان</p><p class="transcript">dajaajtaan</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-2chicken')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-chickens">
+                                <div class="card-front"><p>🐔🐔🐔</p></div>
+                                <div class="card-back"><p>دجاجات</p><p class="transcript">dajaajaat</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-chickens')"></button></p>
+                    </div>
+                </div>
+
+                <p>Manzanas</p>
+                <div class="card-area">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-apple">
+                                <div class="card-front"><p>🍎</p></div>
+                                <div class="card-back"><p>تفاحة</p><p class="transcript">tiffaHa</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-apple')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-2apple">
+                                <div class="card-front"><p>🍎🍎</p></div>
+                                <div class="card-back"><p>تفاحتان</p><p class="transcript">tiffaHtaan</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-2apple')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-apples">
+                                <div class="card-front"><p>🍎🍎🍎</p></div>
+                                <div class="card-back"><p>تفاحات</p><p class="transcript">tiffaHaat</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-apples')"></button></p>
+                    </div>
+                </div>
+                <p>Zumo de manzana, tarta de manzana</p>
+                <div class="card-area">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-applejuice">
+                                <div class="card-front"><p>zumo de manzana</p></div>
+                                <div class="card-back"><p>عصير تفاح</p><p class="transcript">3aSiir tiffaH</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-applejuice')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-applepie">
+                                <div class="card-front"><p>tarta de manzana</p></div>
+                                <div class="card-back"><p>فطيرة التفاح</p><p class="transcript">faTiirat al-tiffaH</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-applepie')"></button></p>
+                    </div>
+                </div>
+
+                <h2>Explicación del sistema de raíces</h2>
+                <p>(pendiente)</p>
+
+                <h2>Notas</h2>
+                <p>
+                    * (...)
+                </p>
+                <p>
+                    ** (...)
+                </p>
+
+            </div>
+            <div class="window-bottom-bar"></div>
+        </div>
+
+        <script src="/script.js"></script>
+        <script>
+            function flipCard(card_id){
+                card = document.getElementById(card_id);
+                card.className==="card-showingBack"?card.className="card-content":card.className="card-showingBack";
+                //console.log("flipping " + card_id);
+                document.getElementById("paper-sound").play();
+            }
+        </script>
+        
+    </body>
+</html>
