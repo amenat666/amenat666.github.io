@@ -239,6 +239,16 @@ select{
 
 /* Details and summary */
 details{
+    margin-bottom:0.625rem;
+}
+details p{
+    padding:0 1.25rem 0 1.25rem;
+}
+details summary{
+    padding: 0 0 0 0.625rem;
+    font-size:1.2rem;
+}
+/*details{
     background-color:rgba(54,45,112,0.75);
     border-radius:0.25rem;
     border:0.1rem solid;
@@ -256,4 +266,4 @@ details summary{
     padding:0 0 0 0.625rem;
     box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.2);
     font-size:1.2rem;
-}
+}*/
