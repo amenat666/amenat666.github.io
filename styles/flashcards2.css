@@ -103,7 +103,7 @@ tbody th,td{
     padding:0.5rem;
     border-top:0.0625rem solid;
     border-right:0.0625rem solid;
-    width:min-content;
+    width:auto;
 }
 tbody td strong{
     color:lightpink;
