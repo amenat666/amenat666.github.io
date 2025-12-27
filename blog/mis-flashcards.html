@@ -9,9 +9,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <style>
+        @media(prefers-color-scheme:light){
+            body{
+                strong{
+                    color:purple;
+                }
+            }
+        }
         h2{
             font-family:'JP Hand Straight';
             font-size:1.75rem;
+        }
+        strong{
+            color:pink;
         }
     </style>
     <body>
@@ -20,7 +30,7 @@
         </audio>
         <div class="nav-window">
             <div class="nav-window-titlebar">
-                <div class="nav-window-icon"><button><strong onclick="collapseNavWindow()">&sstarf;&sstarf;&sstarf;</strong></button></div>
+                <div class="nav-window-icon"><button><strong style="color:inherit;" onclick="collapseNavWindow()">&sstarf;&sstarf;&sstarf;</strong></button></div>
                 <div class="nav-window-title">Opciones</div>
             </div>
             <div class="nav-window-content" id="topnav">
@@ -47,7 +57,7 @@
                     Pequeño disclaimer para quienes saben y/o están aprendiendo árabe:
                 </p>
                 <p>
-                    El curso al que me apunté es de <strong>árabe levantino</strong>, no <strong>árabe estándar</strong>. No creo que los mecanismos de los que hablo aquí varíen mucho entre uno y otro porque son cosas bastante generales, pero tenlo en cuenta de todas formas.
+                    El curso al que me apunté es de <strong style="color:inherit;">árabe levantino</strong>, no <strong style="color:inherit;">árabe estándar</strong>. No creo que los mecanismos de los que hablo aquí varíen mucho entre uno y otro porque son cosas bastante generales, pero tenlo en cuenta de todas formas.
                 </p>
                 <p>
                     La principal fuente de la información que voy a exponer a continuación son los contenidos que se me han dado en clase y las traducciones y explicaciones de la página <a href="http://arabic.fi">arabic.fi</a>. También he usado el diccionario de bolsillo árabe-francés de Abdelnour (editorial Dar El-Ilm Lilmalayin), combinándolo con el <a href="https://www.wordreference.com/fres/">wordreference francés-español</a> cuando no conocía la palabra en francés y, ocasionalmente, la <a href="https://ar.wikipedia.org/">wikipedia árabe</a>. Cuando la fuente sea otra (véase: un/a amigo/a o familiar que sabe árabe me explicó algo), lo indicaré.
@@ -175,7 +185,7 @@
                 </p>
                 <p>kh</p><p>b</p><p>z</p>
                 <p>
-                    Bien, esas tres letras, en este orden, son el equivalente al lexema “pan”. Las podemos encontrar en palabras como khobz (pan), khabbaaz (panadero) o makhbuzaat (productos de panadería/bollería). Como ves, no tienen por qué ir juntas, lo importante es que vayan en orden.
+                    Bien, esas tres letras, en este orden, son el equivalente al lexema <strong>pan</strong>. Las podemos encontrar en palabras como <strong>kh</strong>o<strong>bz</strong> (<strong>pan</strong>), <strong>kh</strong>a<strong>bb</strong>aa<strong>z</strong> (<strong>pan</strong>adero) o ma<strong>khb</strong>uu<strong>z</strong>aat (algo así como productos de panadería/bollería). Como ves, no tienen por qué ir juntas, lo importante es que vayan en orden.
                 </p>
                 <p>
                     Amo el C++, así que he aquí un reciclaje (o una sobrecarga, guiño guiño) de mi metáfora anterior: tanto en español como en árabe, el lexema o raíz es una clase abstracta. En español la instanciamos con prefijos y/o sufijos (-adero; -adería; em-, -ar), en árabe la instanciamos con plantillas.
@@ -187,14 +197,14 @@
                     ma _ _ a _
                 </p>
                 <p>
-                    Coloca aquí las tres letras de antes y el resultado es makhbaz = panadería.
+                    Coloca aquí las tres letras de antes y el resultado es ma<strong>khb</strong>ba<strong>z</strong> = <strong>pan</strong>adería.
                 </p>
                 <p>
                     Ahora saco yo tres letras.
                 </p>
                 <p>T</p><p>b</p><p>kh</p>
                 <p>
-                    Las coloco en la plantilla y el resultado es maTbakh = cocina.
+                    Las coloco en la plantilla y el resultado es ma<strong>Tb</strong>a<strong>kh</strong> = <strong>cocin</strong>a.
                 </p>
                 <p>
                     Otra que he visto bastante es ésta, que se usa para nombrar profesiones (hay cuatro huecos porque la segunda letra va duplicada):
@@ -203,14 +213,14 @@
                     _ a _ _ aa _
                 </p>
                 <p>
-                    Prueba a colocar tus tres letras ahí. El resultado es khabbaaz = panadero. Ahora yo pongo las mías y el resultado es Tabbaakh = cocinero. Tiene sentido, ¿no?
+                    Prueba a colocar tus tres letras ahí. El resultado es <strong>kh</strong>a<strong>bb</strong>aa<strong>z</strong> = <strong>pan</strong>adero. Ahora yo pongo las mías y el resultado es <strong>T</strong>a<strong>bb</strong>aa<strong>kh</strong> = <strong>cocin</strong>ero. Tiene sentido, ¿no?
                 </p>
                 <p>
                     Voy a sacar más letras, a ver qué más ejemplos encontramos.
                 </p>
                 <p>T</p><p>y</p><p>r</p>
                 <p>
-                    ¡Oh, qué interesante*! Esta raíz está relacionada con el vuelo, los aviones y los pájaros. ¿A que no adivinas qué palabra obtenemos al colocarla en esta plantilla? En efecto, Tayyaar = piloto.
+                    ¡Oh, qué interesante*! Esta raíz está relacionada con el vuelo, los aviones y los pájaros. ¿A que no adivinas qué palabra obtenemos al colocarla en esta plantilla? En efecto, <strong>T</strong>a<strong>yy</strong>aa<strong>r</strong> = piloto.
                 </p>
                 <p>
                     Ésta es otra plantilla de profesiones con la que me he encontrado unas cuantas veces (al igual que antes, la segunda letra va duplicada), y que personalmente me encanta:
@@ -221,14 +231,14 @@
                 <p>
                     Da la casualidad de que ninguno de los conjuntos que hemos sacado hasta ahora es compatible con esta plantilla (que yo sepa al menos), pero ahí van algunos ejemplos rápidos:
                 </p>
-                <p>mu3allim = profesor</p>
-                <p>mumarriD = enfermero</p>
-                <p>mughanniy = cantante</p>
+                <p>mu<strong>3</strong>a<strong>ll</strong>i<strong>m</strong> = profesor</p>
+                <p>mu<strong>m</strong>a<strong>rr</strong>i<strong>D</strong> = enfermero</p>
+                <p>mu<strong>gh</strong>a<strong>nn</strong>i<strong>y</strong> = cantante</p>
                 <p>
                     Lo curioso de esta plantilla es que, por lo que he visto, admite combinaciones tanto de tres como de cuatro letras. Que haya cuatro letras es raro, y yo sólo lo he visto en dos ocasiones: las combinaciones h, n, d, s; y t, r, j, m; que tienen que ver con la ingeniería y la traducción respectivamente.
                 </p>
-                <p>handasa = ingeniería, muhandis = ingeniero</p>
-                <p>tarjama = traducción, mutarjim = traductor</p>
+                <p><strong>h</strong>a<strong>nd</strong>a<strong>s</strong>a = <strong>ingenier</strong>ía, mu<strong>h</strong>a<strong>nd</strong>i<strong>s</strong> = <strong>ingenier</strong>o</p>
+                <p><strong>t</strong>a<strong>rj</strong>a<strong>m</strong>a = <strong>traduc</strong>ción, mu<strong>t</strong>a<strong>rj</strong>i<strong>m</strong> = <strong>traduc</strong>tor</p>
                 <p>
                     Por supuesto que tiene sus irregularidades, excepciones y cosas raras, y los resultados no siempre son predecibles, especialmente cuando el significado de la raíz es abstracto, pero en general este sistema me parece satisfactorio. Es modular, fácil de entender y resulta tremendamente útil cuando estás empezando a aprender el idioma. Definitivamente lo usaré para ampliar mi vocabulario.
                 </p>
@@ -238,7 +248,7 @@
 
                 <h2>Notas</h2>
                 <p>
-                    * Pasa algo curioso con las raíces que llevan y o w, y es que a veces modifican la plantilla; la y o la w se “transforma” en otra letra o simplemente no aparece en la palabra final. La combinación  T, y, r, al colocarla en la plantilla ma _ _ a _ daría lugar a la palabra maTaar = aeropuerto; la y no está, y en lugar de ella parece que se ha “duplicado” la a de la plantilla, convirtiéndose en una aaaaaaaaa larga. Ten eso en cuenta para no confundirte con la palabra maTar, que no tiene absolutamente nada que ver (significa lluvia). Otro ejemplo que he encontrado es la raíz w, l, d; relacionada con el nacimiento y la infancia, de la que se originan palabras como walad = niño, o miilaad = cumpleaños, que como puedes ver no lleva w. Por qué pasa esto, o cuáles son exactamente las condiciones para que pase, no lo sé, llevo DOS (2) meses aprendiendo, ¿vale?
+                    * Pasa algo curioso con las raíces que llevan y o w, y es que a veces modifican la plantilla; la y o la w se “transforma” en otra letra o simplemente no aparece en la palabra final. La combinación  T, y, r, al colocarla en la plantilla ma _ _ a _ daría lugar a la palabra ma<strong>T</strong>aa<strong>r</strong> = aeropuerto; la y no está, y en lugar de ella parece que se ha “duplicado” la a de la plantilla, convirtiéndose en una aaaaaaaaa larga. Ten eso en cuenta para no confundirte con la palabra <strong>m</strong>a<strong>T</strong>a<strong>r</strong>, que no tiene absolutamente nada que ver (significa lluvia). Otro ejemplo que he encontrado es la raíz w, l, d; relacionada con el nacimiento y la infancia, de la que se originan palabras como <strong>w</strong>a<strong>l</strong>a<strong>d</strong> = niño, o mii<strong>l</strong>aa<strong>d</strong> = cumpleaños, que como puedes ver no lleva w. Por qué pasa esto, o cuáles son exactamente las condiciones para que pase, no lo sé, llevo DOS (2) meses aprendiendo, ¿vale?
                 </p>
                 <p>
                     Finalmente, sobre cómo estoy transcribiendo ciertos sonidos inusuales...
