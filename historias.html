@@ -37,93 +37,91 @@
         .flex-item-general img:hover{scale:1.25;}
     </style>
     <body>
-
         <span id="arriba"></span>
-
-        <div class="nav-window">
-            <div class="nav-window-titlebar">
-                <div class="nav-window-icon">
-                    <button onclick="collapseNavWindow()"><strong>&sstarf;&sstarf;&sstarf;</strong></button>
+        <header>
+            <div class="nav-window">
+                <div class="nav-window-titlebar">
+                    <div class="nav-window-icon">
+                        <button onclick="collapseNavWindow()"><strong>&sstarf;&sstarf;&sstarf;</strong></button>
+                    </div>
+                    <div class="nav-window-title">Navegación</div>
                 </div>
-                <div class="nav-window-title">Navegación</div>
-            </div>
-            <div class="nav-window-content" id="topnav">
-                <a href="/">Inicio</a>
-                <a href="/historias.html" id="current-page">Historias</a>
-                <a href="/poemas.html">Poemas</a>
-                <a href="/blog.html">Blog</a>
-                <a href="/about.html">Más información</a>
-            </div>
-        </div>
-
-        <div class="window">
-            <div class="window-titlebar">
-                <div class="window-title">*.&star; Historias &star;.*</div>
-            </div>
-            <div class="window-content">
-                <p>Puedes ver más detalles sobre cada historia haciendo click en la imagen.</p>
-                <div class="flex-container">
-                    <div class="flex-item-general">
-                        <p style="text-align:center;">
-                            <a href="#window1"><img src="/assets/stories-icon1.PNG" onclick="showSpecificWindow(1)"></a>
-                        </p>
-                        <h2>Los Colores / Solsticio</h2>
-                    </div>
-                    <div class="flex-item-general">
-                        <p style="text-align:center;">
-                            <a href="#window2"><img src="/assets/stories-icon2-cropped.PNG" onclick="showSpecificWindow(2)"></a>
-                        </p>
-                        <h2>Metamorfosis / Profecía / Hermana Pequeña</h2>
-                    </div>
+                <div class="nav-window-content" id="topnav">
+                    <a href="/">Inicio</a>
+                    <a href="/historias.html" id="current-page">Historias</a>
+                    <a href="/poemas.html">Poemas</a>
+                    <a href="/blog.html">Blog</a>
+                    <a href="/about.html">Más información</a>
                 </div>
             </div>
-            <div class="window-bottom-bar"></div>
-        </div>
-
-        <div class="window-collapsed" id="window1">
-            <div class="window-titlebar">
-                <div class="window-title">Los Colores/Solsticio</div>
+        </header>
+        <main>
+            <div class="window">
+                <div class="window-titlebar">
+                    <div class="window-title">*.&star; Historias &star;.*</div>
+                </div>
+                <div class="window-content">
+                    <p>Puedes ver más detalles sobre cada historia haciendo click en la imagen.</p>
+                    <div class="flex-container">
+                        <div class="flex-item-general">
+                            <p style="text-align:center;">
+                                <a href="#window1"><img src="/assets/stories-icon1.PNG" onclick="showSpecificWindow(1)"></a>
+                            </p>
+                            <h2>Los Colores / Solsticio</h2>
+                        </div>
+                        <div class="flex-item-general">
+                            <p style="text-align:center;">
+                                <a href="#window2"><img src="/assets/stories-icon2-cropped.PNG" onclick="showSpecificWindow(2)"></a>
+                            </p>
+                            <h2>Metamorfosis / Profecía / Hermana Pequeña</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-bottom-bar"></div>
             </div>
-            <div class="window-content">
-                <p>
-                    Dos relatos que van juntos porque son dos caras de lo mismo; una historia trágica de muerte y amistad perdida. Puedes leerlos en el orden que quieras, aunque el orden en el que están es el recomendado.
-                </p>
-                <p>
-                    Ambos fueron escritos en febrero de 2024.
-                </p>
-                <ul>
-                    <li><a href="/historias/los-colores.html">Los Colores, Desatados</a></li>
-                    <li><a href="/historias/solsticio.html">Solsticio</a></li>
-                </ul>
+            <div class="window-collapsed" id="window1">
+                <div class="window-titlebar">
+                    <div class="window-title">Los Colores/Solsticio</div>
+                </div>
+                <div class="window-content">
+                    <p>
+                        Dos relatos que van juntos porque son dos caras de lo mismo; una historia trágica de muerte y amistad perdida. Puedes leerlos en el orden que quieras, aunque el orden en el que están es el recomendado.
+                    </p>
+                    <p>
+                        Ambos fueron escritos en febrero de 2024.
+                    </p>
+                    <ul>
+                        <li><a href="/historias/los-colores.html">Los Colores, Desatados</a></li>
+                        <li><a href="/historias/solsticio.html">Solsticio</a></li>
+                    </ul>
+                </div>
+                <div class="window-bottom-bar"></div>
             </div>
-            <div class="window-bottom-bar"></div>
-        </div>
-
-        <div class="window-collapsed" id="window2">
-            <div class="window-titlebar">
-                <div class="window-title">Metamorfosis / Profecía / Hermana Pequeña</div>
+            <div class="window-collapsed" id="window2">
+                <div class="window-titlebar">
+                    <div class="window-title">Metamorfosis / Profecía / Hermana Pequeña</div>
+                </div>
+                <div class="window-content">
+                    <p>
+                        Una pequeña historia <em>sci-fi</em>. Éste iba a ser el epílogo de uno de mis intentos fallidos de novela, el cual llevo abandonando y retomando sin llegar a absolutamente nada desde 2021 (la vez más reciente fue en junio de 2025).
+                    </p>
+                    <p>Tal vez algún día salga. Lo dudo, pero quién sabe.</p>
+                    <p>
+                        Este relato fue escrito en febrero de 2022. Lo he retocado varias veces, pero la historia, la esencia, es la misma.
+                    </p>
+                    <ul>
+                        <li><a href="/historias/metamorfosis.html">Metamorfosis / Profecía / Hermana Pequeña</a></li>
+                    </ul>
+                </div>
+                <div class="window-bottom-bar"></div>
             </div>
-            <div class="window-content">
-                <p>
-                    Una pequeña historia <em>sci-fi</em>. Éste iba a ser el epílogo de uno de mis intentos fallidos de novela, el cual llevo abandonando y retomando sin llegar a absolutamente nada desde 2021 (la vez más reciente fue en junio de 2025).
-                </p>
-                <p>Tal vez algún día salga. Lo dudo, pero quién sabe.</p>
-                <p>
-                    Este relato fue escrito en febrero de 2022. Lo he retocado varias veces, pero la historia, la esencia, es la misma.
-                </p>
-                <ul>
-                    <li><a href="/historias/metamorfosis.html">Metamorfosis / Profecía / Hermana Pequeña</a></li>
-                </ul>
-            </div>
-            <div class="window-bottom-bar"></div>
-        </div>
-
-        <p style="text-align:center;">
-            <a href="#arriba" onclick="hideAllWindows(),expandNavWindow()">Volver arriba</a>
-        </p>
-
-        <p style="text-align:center;">CSS and site contents (poems, texts, drawings, etc.) are protected by copyright© law.</p>
-
+        </main>
+        <footer>
+            <p style="text-align:center;">
+                <a href="#arriba" onclick="hideAllWindows(),expandNavWindow()">Volver arriba</a>
+            </p>
+            <p style="text-align:center;">CSS and site contents (poems, texts, drawings, etc.) are protected by copyright© law.</p>
+        </footer>
         <script src="/script.js"></script>
     </body>
 </html>

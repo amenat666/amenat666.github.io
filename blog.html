@@ -8,43 +8,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-
-        <div class="nav-window">
-            <div class="nav-window-titlebar">
-                <div class="nav-window-icon">
-                    <button onclick="collapseNavWindow()"><strong>&sstarf;&sstarf;&sstarf;</strong></button>
+        <header>
+            <div class="nav-window">
+                <div class="nav-window-titlebar">
+                    <div class="nav-window-icon">
+                        <button onclick="collapseNavWindow()"><strong>&sstarf;&sstarf;&sstarf;</strong></button>
+                    </div>
+                    <div class="nav-window-title">Navegación</div>
                 </div>
-                <div class="nav-window-title">Navegación</div>
+                <div class="nav-window-content" id="topnav">
+                    <a href="/">Inicio</a>
+                    <a href="/historias.html">Historias</a>
+                    <a href="/poemas.html">Poemas</a>
+                    <a href="/blog.html" id="current-page">Blog</a>
+                    <a href="/about.html">Más información</a>
+                </div>
             </div>
-            <div class="nav-window-content" id="topnav">
-                <a href="/">Inicio</a>
-                <a href="/historias.html">Historias</a>
-                <a href="/poemas.html">Poemas</a>
-                <a href="/blog.html" id="current-page">Blog</a>
-                <a href="/about.html">Más información</a>
+        </header>
+        <main>
+            <div class="window">
+                <div class="window-titlebar">
+                    <div class="window-title">*.&star; Blog &star;.*</div>
+                </div>
+                <div class="window-content">
+                    <p>
+                        <ul>
+                            <li><a href="/blog/diarios.html">Diarios invernales (21/11/2025)</a></li>
+                            <li><a href="/blog/los-tres-tipos.html">Los tres tipos de idea suicida (26/10/2025)</a></li>
+                            <li><a href="/blog/mis-listas.html">Mis playlists favoritas (9/10/2025)</a></li>
+                            <li><a href="/blog/mi-imperio-romano.html">¿Cada cuánto tiempo piensas en Ted Kaczynski? (21/9/2025)</a></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="window-bottom-bar"></div>
             </div>
-        </div>
-
-        <div class="window">
-            <div class="window-titlebar">
-                <div class="window-title">*.&star; Blog &star;.*</div>
-            </div>
-            <div class="window-content">
-                <p>
-                    <ul>
-                        <li><a href="/blog/diarios.html">Diarios invernales (21/11/2025)</a></li>
-                        <li><a href="/blog/los-tres-tipos.html">Los tres tipos de idea suicida (26/10/2025)</a></li>
-                        <li><a href="/blog/mis-listas.html">Mis playlists favoritas (9/10/2025)</a></li>
-                        <li><a href="/blog/mi-imperio-romano.html">¿Cada cuánto tiempo piensas en Ted Kaczynski? (21/9/2025)</a></li>
-                    </ul>
-                </p>
-            </div>
-            <div class="window-bottom-bar"></div>
-        </div>
-
-        <p style="text-align:center;">CSS and site contents (poems, texts, drawings, etc.) are protected by copyright© law.</p>
-
+        </main>
+        <footer>
+            <p style="text-align:center;">CSS and site contents (poems, texts, drawings, etc.) are protected by copyright© law.</p>
+        </footer>
         <script src="/script.js"></script>
-
     </body>
 </html>
