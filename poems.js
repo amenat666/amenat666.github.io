@@ -10,7 +10,8 @@ const poems_es = [
     {title:"Otra Vez", fileName:"otra-vez.html", fecha:new Date("2025-02-12")},
     {title:"Te Guardo", fileName:"te-guardo.html", fecha:new Date("2025-08-26")},
     {title:"Mirada Vacía",fileName:"mirada-vacia.html",fecha:new Date("2025-11-21")},
-    {title:"Y de pronto...",fileName:"y-de-pronto.html",fecha:new Date("2025-12-12")}
+    {title:"Y de pronto...",fileName:"y-de-pronto.html",fecha:new Date("2025-12-12")},
+    {title:"El Accidente",fileName:"el-accidente.html",fecha:new Date("2025-12-21")}
 ];
 let poems_list_es = poems_es;
 let orden_poemas_es;

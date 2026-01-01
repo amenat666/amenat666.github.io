@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/paper.css">
+        <link rel="stylesheet" href="/styles/poemas.css">
+        <link rel="stylesheet" href="/styles/window.css">
+        <title>Poemas | El Accidente</title>
+        <link rel="icon" href="/assets/poem-icon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body onload="paperSoundEffect(), setPoemNavigation_ES('El Accidente')">
+        <audio id="paper-sound">
+            <source src="/assets/215743__supersnd__turning-page-2.wav">
+        </audio>
+        <audio id="paper-sound2">
+            <source src="/assets/428665__jomse__pickupbook2.wav">
+        </audio>
+        
+        <div class="flex-container-general">
+            <div class="nav-window-area">
+                <div class="nav-window">
+                    <div class="nav-window-titlebar">
+                        <div class="nav-window-icon"><button onclick="collapseNavWindow()"><strong>&sstarf;&sstarf;&sstarf;</strong></button></div>
+                        <div class="nav-window-title">Opciones</div>
+                    </div>
+                    <div class="nav-window-content" id="topnav">
+                        <a href="/poemas.html">Volver</a>
+                        <a href="" id="link-prev">Anterior</a>
+                        <a href="" id="link-next">Siguiente</a>
+                        <button onclick="changeFont()">Cambiar estilo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="viewport-area">
+                <div class="viewport">
+                    <span id="poem" class="default">
+                        <h1>El Accidente</h1>
+                        <p>
+                            El árbol frutal infestado de clavos<br>La manzana infestada<br>De hierro oxidado
+                        </p>
+                        <p>
+                            Y brutal tentación<br>Dulce y súbita
+                        </p>
+                        <p>
+                            El mordisco de un perro llamado Tétanos<br>El mordisco de una jeringa<br>En el músculo envenenado
+                        </p>
+                        <p>
+                            La aguja de medialuna<br>Que me cose con hilo negro<br>Cual beso de acero en mis labios cerrados
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script src="/script.js"></script>
+        <script src="/poems.js"></script>
+
+    </body>
+</html>
