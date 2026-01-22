@@ -1,0 +1,110 @@
+
+@keyframes spin-in{
+    from{transform:rotateY(90deg);}
+    to{transform:rotateY(0deg);}
+}
+
+@media (prefers-color-scheme:light){
+    body{
+        .card{
+            background-image:url("/assets/paper-background-light.jpg");
+            border-color:#bbb;
+            box-shadow: 15px 0 15px 0 rgba(115, 115, 115, 0.25);
+        }
+        tbody td strong{color:purple;}
+    }
+}
+@media screen and (max-width:800px){
+    body{
+        .card-area{
+            flex-direction:column;
+        }
+        .card-holder{
+            align-items:center;
+        }
+        .table-holder{
+            justify-content:left;
+        }
+    }
+}
+h1{
+    font-family:'JP Hand Straight';
+    font-size:1.75rem;
+}
+.card-area{
+    display:flex;
+    flex-direction:row;
+    gap:2.25rem;
+    justify-content:center;
+    padding:1.5rem;
+}
+.card-holder{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+.card-holder p{
+    text-align:center;
+    margin:0;
+}
+.card{
+    background-color:grey;
+    background-image:url("/assets/paper-background.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:15rem;
+    height:7.5rem;
+    padding:1.25rem .5rem 1.25rem .5rem;
+    border:0.125rem solid;
+    border-color:#0a0a0a;
+    border-radius:0.75rem;
+    box-shadow: 15px 0 15px 0 rgba(0,0,0,0.35);
+}
+.card-content,.card-showingBack{
+    overflow:hidden;
+    height:100%;
+    align-content:center;
+}
+.card-holder button{
+    font-size:1.5rem;
+}
+.card-holder button::before{
+    content:"↻";
+}
+.card-content p,.card-showingBack p{
+    font-size:3.25rem;
+}
+p.transcript{
+    font-size:1.25rem;
+    font-style:italic;
+}
+.card-content .card-back{display:none;}
+.card-showingBack .card-front{display:none;}
+.card-front, .card-back{animation:spin-in;animation-duration:0.65s;}
+
+.table-holder{
+    display:flex;
+    justify-content:center;
+    overflow:auto;
+}
+table{
+    border-collapse:collapse;
+    border:0.1rem solid;
+    border-radius:0.25rem;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:1.625rem;
+}
+thead th{
+    padding:0.5rem;
+    border-right:0.0625rem solid;
+    border-bottom:0.1rem solid;
+}
+tbody th,td{
+    padding:0.5rem;
+    border-top:0.0625rem solid;
+    border-right:0.0625rem solid;
+    width:auto;
+}
+tbody td strong{
+    color:lightpink;
+}

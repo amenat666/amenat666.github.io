@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="/styles/window.css">
+        <link rel="stylesheet" href="/styles/blog-posts.css">
+        <link rel="stylesheet" href="/styles/flashcards2.css">
+        <title>Blog | Mis flashcards de árabe y otras chorradas</title>
+        <link rel="icon" href="/assets/blog-icon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+        @media(prefers-color-scheme:light){
+            body{
+                strong{
+                    color:rgb(53, 0, 139);
+                }
+            }
+        }
+        h2{
+            font-family:'JP Hand Straight';
+            font-size:1.75rem;
+        }
+        strong{
+            color:rgb(255, 213, 219);
+        }
+    </style>
+    <body>
+        <audio id="paper-sound">
+            <source src="/assets/428665__jomse__pickupbook2.wav">
+        </audio>
+        <div class="nav-window">
+            <div class="nav-window-titlebar">
+                <div class="nav-window-icon"><button><strong style="color:inherit;" onclick="collapseNavWindow()">&sstarf;&sstarf;&sstarf;</strong></button></div>
+                <div class="nav-window-title">Opciones</div>
+            </div>
+            <div class="nav-window-content" id="topnav">
+                <a href="/blog.html">Volver</a>
+                <a href="diarios.html">Anterior</a>
+            </div>
+        </div>
+
+        <header id="inicio">Mis flashcards de árabe y otras chorradas</header>
+
+        <div class="window">
+            <div class="window-titlebar">
+                <div class="window-title">Mis flashcards de árabe y otras chorradas (22/01/2026)</div>
+            </div>
+            <div class="window-content">
+                <p>Hola.</p>
+                <p>
+                    Esta entrada de mi blog trata sobre un par de curiosidades de la gramática árabe. Llevo desde octubre del año pasado estudiándolo y me apetecía compartir lo que he aprendido, y ya de paso animarme un poco con la idea de que, para variar, tengo un logro académico del que enorgullecerme, aunque sea pequeño.
+                </p>
+                <p>
+                    Así que deja que te invite a un té de agua de rosas y un trozo de <em>knefe</em> y ponte cómodo/a mientras te introduzco (aun muy por encima) a la más hablada de las lenguas semíticas. ;)
+                </p>
+                <p>
+                    Pequeño disclaimer para quienes saben y/o están aprendiendo árabe:
+                </p>
+                <p>
+                    El curso al que me apunté es de <strong style="color:inherit;">árabe levantino</strong>, no <strong style="color:inherit;">árabe estándar</strong>. No creo que los mecanismos de los que hablo aquí varíen mucho entre uno y otro porque son cosas bastante generales, pero tenlo en cuenta de todas formas.
+                </p>
+                <p>
+                    La principal fuente de la información que voy a exponer a continuación son los contenidos que se me han dado en clase y las traducciones y explicaciones de la página <a href="http://arabic.fi">arabic.fi</a> (incluido su maravilloso <a href="https://arabic.fi/roots">buscador de raíces</a>). También he usado el diccionario de bolsillo árabe-francés de Abdelnour (editorial Dar El-Ilm Lilmalayin), combinándolo con el <a href="https://www.wordreference.com/fres/">wordreference francés-español</a> cuando no conocía la palabra en francés y, ocasionalmente, la <a href="https://ar.wikipedia.org/">wikipedia árabe</a>.
+                </p>
+                <p>
+                    Si sabes árabe y ves algún error, imprecisión, mala traducción, mala transcripción, o lo que sea, por favor dímelo.
+                </p>
+                <p>
+                    Fin del disclaimer. <em>Merci</em>!
+                </p>
+
+                <h2>Explicación del plural + Flashcards</h2>
+                <p>
+                    (<a href="https://www.devsolitude.com/blog/how-to-create-html-css-cards-flashcards">Tutorial en el que me basé para hacer las flashcards</a>)
+                </p>
+                <p>
+                    En <a href="https://www.youtube.com/watch?v=xBG1eVwH_wg">este vídeo</a>, para ilustrar la inmensidad del léxico árabe (las presuntas 12 millones de palabras, que alguien se ha tomado la molestia de desmentir en <a href="https://www.reddit.com/r/learn_arabic/comments/1ozaghm/arabic_doesnt_have_123_million_words/">este hilo de reddit</a>) con un ejemplo mundano, el autor les pregunta a varios hablantes de distintos dialectos cómo llaman ellos a la gallina. A excepción del chico egipcio, que usa una expresión que ni mi padre (argumento de autoridad) ni yo hemos oído nunca, parece que todos los demás responden, aun con obvias diferencias de pronunciación, con las mismas dos palabras árabes: <em>dajaaj</em> y <em>dajaaja</em>.
+                </p>
+                <p>
+                    Ambas se pueden traducir al inglés como <em>chicken</em>, pero en español hay un ligero matiz: <em>dajaaj</em> se refiere al pollo como concepto, como ingrediente o como material, es algo así como un sustantivo incontable; por el contrario, <em>dajaaja</em> se refiere a un pollo o una gallina, es un sustantivo contable y singular.
+                </p>
+                <p>
+                    Si, como yo, amas el C++, he aquí una metáfora: <em>dajaaj</em> es la clase abstracta y <em>dajaaja</em> es una instancia de esa clase. El constructor es la a del final, una bolita con dos puntos (ة) que se coloca al final de una palabra para volverla singular o femenina. De ahí salen las formas dual y plural.
+                </p>
+                <div class="card-area">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-chicken">
+                                <div class="card-front"><p>🐔</p></div>
+                                <div class="card-back"><p>دجاجة</p><p class="transcript">dajaaja</div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-chicken')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-2chicken">
+                                <div class="card-front"><p>🐔🐔</p></div>
+                                <div class="card-back"><p>دجاجتان</p><p class="transcript">dajaajtaan</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-2chicken')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-chickens">
+                                <div class="card-front"><p>🐔🐔🐔</p></div>
+                                <div class="card-back"><p>دجاجات</p><p class="transcript">dajaajaat</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-chickens')"></button></p>
+                    </div>
+                </div>
+                <p>
+                    Esta cualidad abstracta de los nombres se repite mucho. Fíjate, por ejemplo, en cómo se dice manzana.
+                </p>
+                <div class="card-area">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-apple">
+                                <div class="card-front"><p>🍎</p></div>
+                                <div class="card-back"><p>تفاحة</p><p class="transcript">tiffaHa</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-apple')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-2apple">
+                                <div class="card-front"><p>🍎🍎</p></div>
+                                <div class="card-back"><p>تفاحتان</p><p class="transcript">tiffaHtaan</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-2apple')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-apples">
+                                <div class="card-front"><p>🍎🍎🍎</p></div>
+                                <div class="card-back"><p>تفاحات</p><p class="transcript">tiffaHaat</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-apples')"></button></p>
+                    </div>
+                </div>
+                <p>
+                    De nuevo, la bola con puntos ة. Nótese también que las formas dual y plural terminan igual que las del ejemplo anterior. La palabra <em>tiffaHa</em> se construye con la misma lógica que <em>dajaaja</em>. La forma abstracta, <em>tiffaH</em> se refiere a las manzanas como concepto, del mismo modo que <em>dajaaj</em> se refiere al pollo como concepto.
+                </p>
+                <p>
+                    Piensa en la expresión “zumo de manzana”. Aunque estamos usando la palabra manzana en su forma singular, no es porque el zumo sea de una manzana y no de varias; manzana es, sencillamente, el material del que está hecho, y funciona como nombre incontable. <em>¿De cuántos tungstenos es el torno del dentista, de cuántas maderas el banco, de cuántas manzanas el zumo?</em>, dijo nadie nunca. En español, la diferencia entre el singular y el incontable es implícita; en árabe es explícita. Por ello he querido ilustrar un par de casos de uso de la palabra <em>tiffaH</em>.
+                </p>
+                <div class="card-area">
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-applejuice">
+                                <div class="card-front"><p>zumo de manzana</p></div>
+                                <div class="card-back"><p>عصير تفاح</p><p class="transcript">3aSiir tiffaH</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-applejuice')"></button></p>
+                    </div>
+                    <div class="card-holder">
+                        <div class="card">
+                            <div class="card-content" id="card-applepie">
+                                <div class="card-front"><p>tarta de manzana</p></div>
+                                <div class="card-back"><p>فطيرة التفاح</p><p class="transcript">faTiirat al-tiffaH</p></div>
+                            </div>
+                        </div>
+                        <p><button onclick="flipCard('card-applepie')"></button></p>
+                    </div>
+                </div>
+
+                <h2>Explicación del sistema de raíces</h2>
+                <p>
+                    En español tenemos algo llamado lexema o raíz. Normalmente se compone de una o varias sílabas en las que reside un significado, y a las que añadimos prefijos o sufijos para crear una familia léxica. Por ejemplo:
+                </p>
+                <p>
+                    <strong>Pan</strong>, <strong>pan</strong>adero, <strong>pan</strong>adería, <strong>pan</strong>ificadora, em<strong>pan</strong>ado, em<strong>pan</strong>ar.
+                </p>
+                <p>
+                    En árabe la dinámica es ligeramente distinta; no hay un lexema propiamente dicho, el significado reside en una combinación de tres letras en un determinado orden, pero que no necesariamente forman una sílaba fija.
+                </p>
+                <p>
+                    Imagina que tienes un saco de fichas de <em>Scrabble</em> lleno de letras árabes. Sacas tres al azar y las colocas en la mesa, una por una.
+                </p>
+                <p>kh</p><p>b</p><p>z</p>
+                <p>
+                    Bien, esas tres letras, en este orden, son el equivalente al lexema <strong>pan</strong>. Las podemos encontrar en palabras como <strong>kh</strong>o<strong>bz</strong> (<strong>pan</strong>), <strong>kh</strong>a<strong>bb</strong>aa<strong>z</strong> (<strong>pan</strong>adero) o ma<strong>khb</strong>uu<strong>z</strong>aat (algo así como productos de panadería/bollería). Como ves, no tienen por qué ir juntas, lo importante es que vayan en orden.
+                </p>
+                <p>
+                    Amo el C++, así que he aquí un reciclaje (o una sobrecarga, guiño guiño) de mi metáfora anterior: tanto en español como en árabe, el lexema o raíz es una clase abstracta. En español la instanciamos con prefijos y/o sufijos (-adero; -adería; em-, -ar), en árabe la instanciamos con plantillas.
+                </p>
+                <p>
+                    Por ejemplo, ésta es una para crear nombres de lugares:
+                </p>
+                <p>
+                    ma _ _ a _
+                </p>
+                <p>
+                    Coloca aquí las tres letras de antes y el resultado es ma<strong>khb</strong>ba<strong>z</strong> = <strong>pan</strong>adería*.
+                </p>
+                <p>
+                    Ahora saco yo tres letras.
+                </p>
+                <p>T</p><p>b</p><p>kh</p>
+                <p>
+                    Las coloco en la plantilla y el resultado es ma<strong>Tb</strong>a<strong>kh</strong> = <strong>cocin</strong>a.
+                </p>
+                <p>
+                    Otra que he visto bastante es ésta, que se usa para nombrar profesiones (hay cuatro huecos porque la segunda letra va duplicada):
+                </p>
+                <p>
+                    _ a _ _ aa _
+                </p>
+                <p>
+                    Prueba a colocar tus tres letras ahí. El resultado es <strong>kh</strong>a<strong>bb</strong>aa<strong>z</strong> = <strong>pan</strong>adero. Ahora yo pongo las mías y el resultado es <strong>T</strong>a<strong>bb</strong>aa<strong>kh</strong> = <strong>cocin</strong>ero. Tiene sentido, ¿no?
+                </p>
+                <p>
+                    Voy a sacar más letras, a ver qué más ejemplos encontramos.
+                </p>
+                <p>T</p><p>y</p><p>r</p>
+                <p>
+                    ¡Oh, qué interesante**! Esta raíz está relacionada con el vuelo, los aviones y los pájaros. ¿A que no adivinas qué palabra obtenemos al colocarla en esta plantilla? En efecto, <strong>T</strong>a<strong>yy</strong>aa<strong>r</strong> = piloto.
+                </p>
+                <p>
+                    Ésta es otra plantilla de profesiones con la que me he encontrado unas cuantas veces (al igual que antes, la segunda letra va duplicada), y que personalmente me encanta:
+                </p>
+                <p>
+                    mu _ a _ _ i _
+                </p>
+                <p>
+                    Da la casualidad de que ninguno de los conjuntos que hemos sacado hasta ahora es compatible con esta plantilla (que yo sepa al menos), pero ahí van algunos ejemplos rápidos:
+                </p>
+                <p>mu<strong>3</strong>a<strong>ll</strong>i<strong>m</strong> = profesor</p>
+                <p>mu<strong>m</strong>a<strong>rr</strong>i<strong>D</strong> = enfermero</p>
+                <p>mu<strong>gh</strong>a<strong>nn</strong>i<strong>y</strong> = cantante</p>
+                <p>
+                    Lo curioso de esta plantilla es que, por lo que he visto, admite combinaciones tanto de tres como de cuatro letras. Que haya cuatro letras es raro, y yo sólo lo he visto en dos ocasiones: las combinaciones h, n, d, s; y t, r, j, m; que tienen que ver con la ingeniería y la traducción respectivamente.
+                </p>
+                <p><strong>h</strong>a<strong>nd</strong>a<strong>s</strong>a = <strong>ingenier</strong>ía, mu<strong>h</strong>a<strong>nd</strong>i<strong>s</strong> = <strong>ingenier</strong>o</p>
+                <p><strong>t</strong>a<strong>rj</strong>a<strong>m</strong>a = <strong>traduc</strong>ción, mu<strong>t</strong>a<strong>rj</strong>i<strong>m</strong> = <strong>traduc</strong>tor</p>
+                <p>
+                    Por supuesto que tiene sus irregularidades, excepciones y cosas raras, y los resultados no siempre son predecibles, especialmente cuando el significado de la raíz es abstracto, pero en general este sistema me parece satisfactorio. Es modular, fácil de entender y resulta tremendamente útil cuando estás empezando a aprender el idioma. Definitivamente lo usaré para ampliar mi vocabulario.
+                </p>
+                <p>
+                    Me lo he pasado muy bien explicando todo esto, y espero que te haya gustado leerlo, independientemente de cuál sea tu grado de familiaridad con la lengua árabe o tu interés por ésta. :)
+                </p>
+
+                <h2>Notas</h2>
+                <p>
+                    * Esa traducción la saqué de arabic.fi, en el diccionario traducen <em>boulangerie</em> de otra forma y la palabra <em>makhbaz</em> no aparece, pero la dejo porque me viene bien para el ejemplo.
+                </p>
+                <p>
+                    ** Pasa algo curioso con las raíces que llevan y o w, y es que a veces modifican la plantilla; la y o la w se “transforma” en otra letra o simplemente no aparece en la palabra final. La combinación  T, y, r, al colocarla en la plantilla ma _ _ a _ daría lugar a la palabra ma<strong>T</strong>aa<strong>r</strong> = aeropuerto; la y no está, y en lugar de ella parece que se ha “duplicado” la a de la plantilla, convirtiéndose en una aaaaaaaaa larga. Ten eso en cuenta para no confundirte con la palabra <strong>m</strong>a<strong>T</strong>a<strong>r</strong>, que no tiene absolutamente nada que ver (significa lluvia). Otro ejemplo que he encontrado es la raíz w, l, d; relacionada con el nacimiento y la infancia, de la que se originan palabras como <strong>w</strong>a<strong>l</strong>a<strong>d</strong> = niño, o mii<strong>l</strong>aa<strong>d</strong> = cumpleaños, que como puedes ver no lleva w. Por qué pasa esto, o cuáles son exactamente las condiciones para que pase, no lo sé, llevo DOS (2) meses aprendiendo, ¿vale?
+                </p>
+                <p>
+                    Finalmente, sobre cómo estoy transcribiendo ciertos sonidos inusuales:
+                </p>
+                <div class="table-holder">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Letra</th>
+                                <th>Sonido</th>
+                                <th>Transcripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>ا</th>
+                                <td>A (laaaarga)</td>
+                                <td>aa</td>
+                            </tr>
+                            <tr>
+                                <th>ح</th>
+                                <td>Como la h inglesa pero ligeramente más fuerte</td>
+                                <td>H (mayúscula siempre)</td>
+                            </tr>
+                            <tr>
+                                <th>خ</th>
+                                <td>Jjjj como la j española</td>
+                                <td>kh</td>
+                            </tr>
+                            <tr>
+                                <th>ص</th>
+                                <td>S fuerte</td>
+                                <td>S (mayúscula siempre)</td>
+                            </tr>
+                            <tr>
+                                <th>ض</th>
+                                <td>D fuerte</td>
+                                <td>D (mayúscula siempre)</td>
+                            </tr>
+                            <tr>
+                                <th>ط</th>
+                                <td>T fuerte</td>
+                                <td>T (mayúscula siempre)</td>
+                            </tr>
+                            <tr>
+                                <th>ع</th>
+                                <td>Indescriptible</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th>غ</th>
+                                <td>Similar a la r francesa</td>
+                                <td>gh</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="window-bottom-bar"></div>
+        </div>
+
+        <p style="text-align:center;margin-bottom:1.5rem;">
+            <a href="#inicio">Volver arriba</a>
+        </p>
+
+        <script src="/script.js"></script>
+        <script>
+            function flipCard(card_id){
+                card = document.getElementById(card_id);
+                card.className==="card-showingBack"?card.className="card-content":card.className="card-showingBack";
+                //console.log("flipping " + card_id);
+                document.getElementById("paper-sound").play();
+            }
+        </script>
+        
+    </body>
+</html>
