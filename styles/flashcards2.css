@@ -27,10 +27,6 @@
         }
     }
 }
-h1{
-    font-family:'JP Hand Straight';
-    font-size:1.75rem;
-}
 .card-area{
     display:flex;
     flex-direction:row;
